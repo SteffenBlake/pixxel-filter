@@ -1,0 +1,9 @@
+using Low.fss;
+
+junk-tier {
+    font-size: 20;
+    bg-color-alpha: 150;
+    alert: disabled;
+    icon: disabled;
+    pillar: disabled;
+}

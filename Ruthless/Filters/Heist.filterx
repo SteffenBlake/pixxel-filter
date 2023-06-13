@@ -1,0 +1,29 @@
+Style heist;
+
+{
+    Class == Blueprints Trinkets;
+    Style exalt-tier;
+}
+{
+    Class == Contracts;
+    Style exalt-tier;
+    {
+        BaseType "Bunker" "Repository" "Tunnels";
+        Style chaos-tier;
+    }
+}
+{
+    Class == "Heist Cloaks" "Heist Brooches" "Heist Tools" "Heist Gear";
+    Style chaos-tier;
+}
+{
+    BaseType == 
+        "Regicide Disguise Kit" "Thaumetic Flashpowder" "Thaumaturgical Sensing Charm"  "Thaumaturgical Ward" "Silkweave Sole"
+        "Thaumetic Blowtorch" "Steel Bracers" "Master Lockpick" "Whisper-woven Cloak" "Burst Band" "Foliate Brooch";
+    ItemLevel >= 83;
+    Style exalt-tier;
+}
+{
+    Class "Heist Targets";
+    Style special-tier;
+}

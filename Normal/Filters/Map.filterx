@@ -1,0 +1,19 @@
+Class == Maps;
+Style chaos-tier map;
+{
+    MapTier <= 8;
+    AreaLevel >= 78;
+    Style junk-tier;
+}
+{
+    MapTier >= 14;
+    Style exalt-tier;
+}
+{
+    BlightedMap True;
+    Style exalt-tier;
+}
+{
+    UberBlightedMap True;
+    Style divine-tier;
+}

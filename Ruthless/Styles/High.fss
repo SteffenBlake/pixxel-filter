@@ -1,0 +1,10 @@
+using Med.fss;
+
+meh-tier {
+    bg-color: 0x150F2D;
+    font-size: 20;
+    bg-color-alpha: 150;
+    alert: disabled;
+    icon: disabled;
+    pillar: disabled;
+}

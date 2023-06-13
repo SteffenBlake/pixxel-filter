@@ -1,0 +1,8 @@
+using Low.fss;
+
+junk-tier {
+    show: False;
+    font-size: 20;
+    alert: disabled;
+    icon: disabled;
+}

@@ -1,0 +1,55 @@
+Style oil;
+{
+    HasValue %MirrorTier_Oil%;
+    BaseType == %MirrorTier_Oil%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_Oil%;
+    BaseType == %ExaltTier_Oil%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_Oil%;
+    BaseType == %DivineTier_Oil%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_Oil%;
+    BaseType == %ChaosTier_Oil%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_Oil%;
+    BaseType == %MehTier_Oil%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_Oil%;
+    BaseType == %JunkTier_Oil%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}

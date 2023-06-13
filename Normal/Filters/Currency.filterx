@@ -1,0 +1,55 @@
+Style currency;
+{
+    HasValue %MirrorTier_Currency%;
+    BaseType == %MirrorTier_Currency%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_Currency%;
+    BaseType == %ExaltTier_Currency%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_Currency%;
+    BaseType == %DivineTier_Currency%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_Currency%;
+    BaseType == %ChaosTier_Currency%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_Currency%;
+    BaseType == %MehTier_Currency%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_Currency%;
+    BaseType == %JunkTier_Currency%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}

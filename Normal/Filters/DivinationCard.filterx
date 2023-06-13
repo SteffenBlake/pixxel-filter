@@ -1,0 +1,84 @@
+Style divination-card;
+{
+    HasValue %MirrorTier_DivinationCard%;
+    BaseType == %MirrorTier_DivinationCard%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_DivinationCard%;
+    BaseType == %ExaltTier_DivinationCard%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_DivinationCard%;
+    BaseType == %DivineTier_DivinationCard%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_DivinationCard%;
+    BaseType == %ChaosTier_DivinationCard%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_DivinationCard%;
+    BaseType == %MehTier_DivinationCard%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_DivinationCard%;
+    BaseType == %JunkTier_DivinationCard%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}
+# Good Currency cards
+{
+    # 6L cards
+    BaseType == 
+        "Bowyer's Dream" "Draped in Dreams" "Emperor of Purity" "Humility" "Immortal Resolve" "Imperial Legacy" "Rebirth"
+        "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "The Ethereal" "The Porcupine"
+        "The Sacrifice" "The Warlord" "The White Knight" "Vanity";
+    # Currency
+    BaseType == 
+        "A Sea of Blue" "Abandoned Wealth" "Acclimatisation" "Alluring Bounty" "Ambitious Obsession" "Chaotic Disposition"
+        "Coveted Possession" "Darker Half" "Demigod's Wager" "Disdain" "Lucky Connections" "Lucky Deck"
+        "Monochrome" "No Traces" "Parasitic Passengers" "Rebirth and Renewal" "Society's Remorse" "The Cacophony"
+        "The Cartographer" "The Fool" "The Heroic Shot" "The Hoarder" "The Innocent" "The Inventor" "The Long Con"
+        "The Rabbit's Foot" "The Saint's Treasure" "The Seeker" "The Sephirot" "The Side Quest" "The Tinkerer's Table"
+        "The Tireless Extractor" "The Union" "The Wrath" "Three Faces in the Dark" "Underground Forest" "Vinia's Token";
+
+    Style exalt-tier;
+}
+# Valuable Currency cards
+{
+    BaseType == "Abandoned Wealth" "Alluring Bounty" "Brother's Stash" "The Hoarder" "The Scout" "Dementophobia";
+    Style divine-tier;
+}
+
+# Mirror Currency cards
+{
+    BaseType == "House of Mirrors" "Seven Years Bad Luck" "The Immortal" "Unrequited Love";
+    Style mirror-tier;
+}

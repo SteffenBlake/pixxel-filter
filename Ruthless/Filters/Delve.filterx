@@ -1,0 +1,8 @@
+Style exalt-tier currency;
+{
+    BaseType = Resonator;
+}
+{
+    Class "Stackable Currency";
+    BaseType = Fossil;
+}

@@ -1,0 +1,8 @@
+using Med.fss;
+
+meh-tier {
+    show: False;
+    font-size: 20;
+    alert: disabled;
+    icon: disabled;
+}

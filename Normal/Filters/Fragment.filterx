@@ -1,0 +1,55 @@
+Style fragment;
+{
+    HasValue %MirrorTier_Fragment%;
+    BaseType == %MirrorTier_Fragment%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_Fragment%;
+    BaseType == %ExaltTier_Fragment%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_Fragment%;
+    BaseType == %DivineTier_Fragment%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_Fragment%;
+    BaseType == %ChaosTier_Fragment%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_Fragment%;
+    BaseType == %MehTier_Fragment%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_Fragment%;
+    BaseType == %JunkTier_Fragment%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}

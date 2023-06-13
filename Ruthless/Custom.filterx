@@ -1,0 +1,20 @@
+{
+    Class Shields;
+    Corrupted True;
+    Rarity < Rare;
+    Style special-tier gear muted;
+}
+
+{
+    BaseType = "Amethyst Ring";
+    Rarity = Normal;
+    Corrupted False;
+    Style divine-tier;
+}
+
+{
+    BaseType = "Darkwood Sceptre";
+    Rarity = Normal;
+    ItemLevel < 8;
+    Style divine-tier;
+}

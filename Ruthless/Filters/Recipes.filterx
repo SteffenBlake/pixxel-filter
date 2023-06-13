@@ -1,0 +1,26 @@
+Style chaos-tier recipe;
+{
+    SocketGroup >= RGB;
+    LinkedSockets < 5;
+}
+{
+    Sockets = 6;
+    LinkedSockets < 5;
+}
+{
+    BaseType == "Stone Hammer" "Rock Breaker" "Gavel";
+    Quality >= 20;
+}
+{
+    BaseType == "Stone Hammer" "Rock Breaker" "Gavel";
+    Rarity == Normal;
+}
+{
+    Class Axe Claws Swords Staves Bows Maces Axes Sceptres Daggers Warstaves Wands;
+    Quality >= 14;
+}
+{
+    Class Flask;
+    Rarity < Unique;
+    Quality >= 10;
+}

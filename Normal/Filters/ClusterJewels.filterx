@@ -1,0 +1,525 @@
+Style meh-tier gear;
+BaseType "Cluster Jewel";
+Corrupted False;
+{
+    ItemLevel >= 84;
+    {
+        HasValue %ChaosTier_Low_i84_ClusterJewel%;
+        EnchantmentPassiveNode %ChaosTier_Low_i84_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 8;
+            Style chaos-tier;
+        }
+    }
+    {
+        HasValue %DivineTier_Low_i84_ClusterJewel%;
+        EnchantmentPassiveNode %DivineTier_Low_i84_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style chaos-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style exalt-tier;
+            }
+        }
+    }
+    {
+        HasValue %ExaltTier_Low_i84_ClusterJewel%;
+        EnchantmentPassiveNode %ExaltTier_Low_i84_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style divine-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style divine-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style exalt-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style divine-tier;
+            }
+        }
+    }
+    
+    {
+        HasValue %ChaosTier_High_i84_ClusterJewel%;
+        EnchantmentPassiveNode %ChaosTier_High_i84_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style chaos-tier;
+        }
+    }
+    {
+        HasValue %DivineTier_High_i84_ClusterJewel%;
+        EnchantmentPassiveNode %DivineTier_High_i84_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style exalt-tier;
+        }
+    }
+    {
+        HasValue %ExaltTier_High_i84_ClusterJewel%;
+        EnchantmentPassiveNode %ExaltTier_High_i84_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style divine-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style divine-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style divine-tier;
+        }
+    }
+}
+
+
+{
+    ItemLevel >= 75;
+    {
+        HasValue %ChaosTier_Low_i75_ClusterJewel%;
+        EnchantmentPassiveNode %ChaosTier_Low_i75_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style meh-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style chaos-tier;
+            }
+        }
+    }
+    {
+        HasValue %DivineTier_Low_i75_ClusterJewel%;
+        EnchantmentPassiveNode %DivineTier_Low_i75_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style chaos-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style exalt-tier;
+            }
+        }
+    }
+    {
+        HasValue %ExaltTier_Low_i75_ClusterJewel%;
+        EnchantmentPassiveNode %ExaltTier_Low_i75_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style divine-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style divine-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style exalt-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style divine-tier;
+            }
+        }
+    }
+    
+    {
+        HasValue %ChaosTier_High_i75_ClusterJewel%;
+        EnchantmentPassiveNode %ChaosTier_High_i75_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style chaos-tier;
+        }
+    }
+    {
+        HasValue %DivineTier_High_i75_ClusterJewel%;
+        EnchantmentPassiveNode %DivineTier_High_i75_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style exalt-tier;
+        }
+    }
+    {
+        HasValue %ExaltTier_High_i75_ClusterJewel%;
+        EnchantmentPassiveNode %ExaltTier_High_i75_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style divine-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style divine-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style divine-tier;
+        }
+    }
+}
+
+
+{
+    ItemLevel >= 68;
+    {
+        HasValue %ChaosTier_Low_i68_ClusterJewel%;
+        EnchantmentPassiveNode %ChaosTier_Low_i68_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style meh-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style chaos-tier;
+            }
+        }
+    }
+    {
+        HasValue %DivineTier_Low_i68_ClusterJewel%;
+        EnchantmentPassiveNode %DivineTier_Low_i68_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style chaos-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style exalt-tier;
+            }
+        }
+    }
+    {
+        HasValue %ExaltTier_Low_i68_ClusterJewel%;
+        EnchantmentPassiveNode %ExaltTier_Low_i68_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style divine-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style divine-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style exalt-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style divine-tier;
+            }
+        }
+    }
+    
+    {
+        HasValue %ChaosTier_High_i68_ClusterJewel%;
+        EnchantmentPassiveNode %ChaosTier_High_i68_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style chaos-tier;
+        }
+    }
+    {
+        HasValue %DivineTier_High_i68_ClusterJewel%;
+        EnchantmentPassiveNode %DivineTier_High_i68_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style exalt-tier;
+        }
+    }
+    {
+        HasValue %ExaltTier_High_i68_ClusterJewel%;
+        EnchantmentPassiveNode %ExaltTier_High_i68_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style divine-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style divine-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style divine-tier;
+        }
+    }
+}
+
+
+{
+    ItemLevel >= 50;
+    {
+        HasValue %ChaosTier_Low_i50_ClusterJewel%;
+        EnchantmentPassiveNode %ChaosTier_Low_i50_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style meh-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style chaos-tier;
+            }
+        }
+    }
+    {
+        HasValue %DivineTier_Low_i50_ClusterJewel%;
+        EnchantmentPassiveNode %DivineTier_Low_i50_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style chaos-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style exalt-tier;
+            }
+        }
+    }
+    {
+        HasValue %ExaltTier_Low_i50_ClusterJewel%;
+        EnchantmentPassiveNode %ExaltTier_Low_i50_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 2;
+            Style divine-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum <= 5;
+            Style divine-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum 9;
+            Style exalt-tier;
+            {
+                EnchantmentPassiveNum 8;
+                Style divine-tier;
+            }
+        }
+    }
+    
+    {
+        HasValue %ChaosTier_High_i50_ClusterJewel%;
+        EnchantmentPassiveNode %ChaosTier_High_i50_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style chaos-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style chaos-tier;
+        }
+    }
+    {
+        HasValue %DivineTier_High_i50_ClusterJewel%;
+        EnchantmentPassiveNode %DivineTier_High_i50_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style exalt-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style exalt-tier;
+        }
+    }
+    {
+        HasValue %ExaltTier_High_i50_ClusterJewel%;
+        EnchantmentPassiveNode %ExaltTier_High_i50_ClusterJewel%;
+        {
+            BaseType "Small Cluster Jewel";
+            EnchantmentPassiveNum == 3;
+            Style divine-tier;
+        }
+        {
+            BaseType "Medium Cluster Jewel";
+            EnchantmentPassiveNum 6;
+            Style divine-tier;
+        }
+        {
+            BaseType "Large Cluster Jewel";
+            EnchantmentPassiveNum >= 11;
+            Style divine-tier;
+        }
+    }
+}

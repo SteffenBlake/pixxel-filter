@@ -1,0 +1,26 @@
+Class Gloves Axe Claws Body Rings Swords Staves Quivers Bows Amulets Maces Axes Sceptres Jewels Daggers Boots Shields Helmets Warstaves Belts Wands;
+Style gear;
+{
+    Rarity == Unique;
+    Style exalt-tier;
+}
+{
+    Rarity == Rare;
+    Style chaos-tier;
+}
+{
+    Rarity == Magic;
+    Style meh-tier;
+}
+{
+    Rarity == Normal;
+    Style junk-tier;
+}
+{
+    LinkedSockets >= 5;
+    Style divine-tier;
+}
+{
+    BaseType = "Eye Jewel" "Stygian Vise";
+    Style divine-tier;
+}

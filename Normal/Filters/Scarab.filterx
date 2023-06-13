@@ -1,0 +1,55 @@
+Style scarab;
+{
+    HasValue %MirrorTier_Scarab%;
+    BaseType == %MirrorTier_Scarab%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_Scarab%;
+    BaseType == %ExaltTier_Scarab%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_Scarab%;
+    BaseType == %DivineTier_Scarab%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_Scarab%;
+    BaseType == %ChaosTier_Scarab%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_Scarab%;
+    BaseType == %MehTier_Scarab%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_Scarab%;
+    BaseType == %JunkTier_Scarab%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}

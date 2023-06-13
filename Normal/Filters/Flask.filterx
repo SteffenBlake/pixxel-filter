@@ -1,0 +1,20 @@
+Style flask;
+
+Class Flask;
+
+{
+    Quality >= 10;
+    Style junk-tier recipe;
+}
+{
+    Quality >= 20;
+    Style meh-tier recipe;
+}
+{
+    BaseType "Quicksilver" "Ruby" "Sapphire" "Topaz" "Gold" "Diamond" "Jade" "Quartz" "Sulphur" "Iron" "Silver" "Stibnite";
+    Style junk-tier;
+    {
+        ItemLevel >= 83;
+        Style meh-tier;
+    }
+}

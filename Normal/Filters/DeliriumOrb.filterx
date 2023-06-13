@@ -1,0 +1,55 @@
+Style currency;
+{
+    HasValue %MirrorTier_DeliriumOrb%;
+    BaseType == %MirrorTier_DeliriumOrb%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_DeliriumOrb%;
+    BaseType == %ExaltTier_DeliriumOrb%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_DeliriumOrb%;
+    BaseType == %DivineTier_DeliriumOrb%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_DeliriumOrb%;
+    BaseType == %ChaosTier_DeliriumOrb%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_DeliriumOrb%;
+    BaseType == %MehTier_DeliriumOrb%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_DeliriumOrb%;
+    BaseType == %JunkTier_DeliriumOrb%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}

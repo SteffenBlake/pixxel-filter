@@ -1,0 +1,163 @@
+Style meh-tier gem;
+
+Class Gems;
+
+{
+    Quality >= 10;
+    Style junk-tier recipe;
+}
+
+{
+    Quality >= 20;
+    AlternateQuality False;
+    Style meh-tier recipe;
+    {
+        HasValue %ChaosTier_X_20_Gem%;
+        BaseType == %ChaosTier_X_20_Gem%;
+        Style chaos-tier gem;
+    }
+    {
+        HasValue %DivineTier_X_20_Gem%;
+        BaseType == %DivineTier_X_20_Gem%;
+        Style exalt-tier gem;
+    }
+    {
+        HasValue %ExaltTier_X_20_Gem%;
+        BaseType == %ExaltTier_X_20_Gem%;
+        Style divine-tier gem;
+    }
+    {
+        Quality >= 23;
+        {
+            GemLevel == 20;
+            {
+                HasValue %ChaosTier_20_23_Gem%;
+                BaseType == %ChaosTier_20_23_Gem%;
+                Style chaos-tier gem;
+            }
+            {
+                HasValue %DivineTier_20_23_Gem%;
+                BaseType == %DivineTier_20_23_Gem%;
+                Style exalt-tier gem;
+            }
+            {
+                HasValue %ExaltTier_20_23_Gem%;
+                BaseType == %ExaltTier_20_23_Gem%;
+                Style divine-tier gem;
+            }
+        }
+        {
+            GemLevel == 21;
+            {
+                HasValue %ChaosTier_21_23_Gem%;
+                BaseType == %ChaosTier_21_23_Gem%;
+                Style chaos-tier gem;
+            }
+            {
+                HasValue %DivineTier_21_23_Gem%;
+                BaseType == %DivineTier_21_23_Gem%;
+                Style exalt-tier gem;
+            }
+            {
+                HasValue %ExaltTier_21_23_Gem%;
+                BaseType == %ExaltTier_21_23_Gem%;
+                Style divine-tier gem;
+            }
+        }
+    }
+    {
+        GemLevel == 21;
+        {
+            HasValue %ChaosTier_21_20_Gem%;
+            BaseType == %ChaosTier_21_20_Gem%;
+            Style chaos-tier gem;
+        }
+        {
+            HasValue %DivineTier_21_20_Gem%;
+            BaseType == %DivineTier_21_20_Gem%;
+            Style exalt-tier gem;
+        }
+        {
+            HasValue %ExaltTier_21_20_Gem%;
+            BaseType == %ExaltTier_21_20_Gem%;
+            Style divine-tier gem;
+        }
+    }
+}
+{
+    BaseType = "Awakened";
+    Style meh-tier;
+}
+{
+    AlternateQuality True;
+    Style meh-tier;
+    {
+        GemQualityType Anomalous;
+        {
+            HasValue %ExaltTier_Anomalous_Gem%;
+            BaseType == %ExaltTier_Anomalous_Gem%;
+            Style divine-tier;
+        }
+        {
+            HasValue %DivineTier_Anomalous_Gem%;
+            BaseType == %DivineTier_Anomalous_Gem%;
+            Style exalt-tier;
+        }
+        {
+            HasValue %ChaosTier_Anomalous_Gem%;
+            BaseType == %ChaosTier_Anomalous_Gem%;
+            Style chaos-tier;
+        }
+    }
+    {
+        GemQualityType Divergent;
+        {
+            HasValue %ChaosTier_Divergent_Gem%;
+            BaseType == %ChaosTier_Divergent_Gem%;
+            Style chaos-tier;
+        }
+        {
+            HasValue %DivineTier_Divergent_Gem%;
+            BaseType == %DivineTier_Divergent_Gem%;
+            Style exalt-tier;
+        }
+        {
+            HasValue %ExaltTier_Divergent_Gem%;
+            BaseType == %ExaltTier_Divergent_Gem%;
+            Style divine-tier;
+        }
+    }
+    {
+        GemQualityType Phantasmal;
+        {
+            HasValue %ChaosTier_Phantasmal_Gem%;
+            BaseType == %ChaosTier_Phantasmal_Gem%;
+            Style chaos-tier;
+        }
+        {
+            HasValue %DivineTier_Phantasmal_Gem%;
+            BaseType == %DivineTier_Phantasmal_Gem%;
+            Style exalt-tier;
+        }
+        {
+            HasValue %ExaltTier_Phantasmal_Gem%;
+            BaseType == %ExaltTier_Phantasmal_Gem%;
+            Style divine-tier;
+        }
+    }
+}
+{
+    HasValue %ChaosTier_Fancy_Gem%;
+    BaseType == %ChaosTier_Fancy_Gem%;
+    Style chaos-tier;
+}
+{
+    HasValue %DivineTier_Fancy_Gem%;
+    BaseType == %DivineTier_Fancy_Gem%;
+    Style exalt-tier;
+}
+{
+    HasValue %ExaltTier_Fancy_Gem%;
+    BaseType == %ExaltTier_Fancy_Gem%;
+    Style divine-tier;
+}

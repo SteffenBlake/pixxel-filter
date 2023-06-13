@@ -1,0 +1,29 @@
+Style base-tier;
+
+{
+    Style junk-tier;
+}
+
+using Gear.filterx;
+
+using ClusterJewels.filterx;
+
+using Currency.filterx;
+using Delve.filterx;
+using Flask.filterx;
+using Fragment.filterx;
+using Gems.filterx;
+using Heist.filterx;
+using Incubator.filterx;
+using Invitation.filterx;
+using Map.filterx;
+using Misc.filterx;
+
+using ../Custom.filterx;
+
+using Recipes.filterx;
+
+{
+    Rarity == Unique;
+    Style divine-tier;
+}

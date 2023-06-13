@@ -1,0 +1,56 @@
+Style quest;
+Class "Misc Map Items";
+{
+    HasValue %MirrorTier_Invitation%;
+    BaseType == %MirrorTier_Invitation%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_Invitation%;
+    BaseType == %ExaltTier_Invitation%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_Invitation%;
+    BaseType == %DivineTier_Invitation%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_Invitation%;
+    BaseType == %ChaosTier_Invitation%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_Invitation%;
+    BaseType == %MehTier_Invitation%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_Invitation%;
+    BaseType == %JunkTier_Invitation%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}

@@ -1,0 +1,326 @@
+Style gear;
+{
+    Rarity == Unique;
+    {
+        HasValue %MehTier_Limited_Unique%;
+        BaseType == %MehTier_Limited_Unique%;
+        Style special-tier;
+        {
+            LinkedSockets = 6;
+            Style exalt-tier;
+        }
+    }
+    {
+        HasValue %VariedTier_Unique%;
+        BaseType == %VariedTier_Unique%;
+        Style special-tier;
+        {
+            LinkedSockets = 6;
+            Style exalt-tier;
+        }
+    }
+    {
+        HasValue %DivineTier_Unique%;
+        BaseType == %DivineTier_Unique%;
+        Style exalt-tier;
+        {
+            LinkedSockets = 6;
+            Style divine-tier;
+        }
+    }
+    {
+        HasValue %ExaltTier_Unique%;
+        BaseType == %ExaltTier_Unique%;
+        Style divine-tier;
+    }
+}
+
+{
+    Rarity < Unique;
+    Corrupted False;
+    {
+        LinkedSockets = 5;
+        Sockets = 6;
+        Style chaos-tier;
+    }
+    {
+        ItemLevel = 82;
+        {
+            HasInfluence None;
+            HasValue %Normal_82_bases%;
+            BaseType %Normal_82_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Shaper;
+            HasValue %Shaper_82_bases%;
+            BaseType %Shaper_82_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Elder;
+            HasValue %Elder_82_bases%;
+            BaseType %Elder_82_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Crusader;
+            HasValue %Crusader_82_bases%;
+            BaseType %Crusader_82_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Hunter;
+            HasValue %Hunter_82_bases%;
+            BaseType %Hunter_82_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Redeemer;
+            HasValue %Redeemer_82_bases%;
+            BaseType %Redeemer_82_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Warlord;
+            HasValue %Warlord_82_bases%;
+            BaseType %Warlord_82_bases%;
+            Style exalt-tier;
+        }
+    }
+    {
+        ItemLevel = 83;
+        {
+            HasInfluence None;
+            HasValue %Normal_83_bases%;
+            BaseType %Normal_83_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Shaper;
+            HasValue %Shaper_83_bases%;
+            BaseType %Shaper_83_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Elder;
+            HasValue %Elder_83_bases%;
+            BaseType %Elder_83_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Crusader;
+            HasValue %Crusader_83_bases%;
+            BaseType %Crusader_83_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Hunter;
+            HasValue %Hunter_83_bases%;
+            BaseType %Hunter_83_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Redeemer;
+            HasValue %Redeemer_83_bases%;
+            BaseType %Redeemer_83_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Warlord;
+            HasValue %Warlord_83_bases%;
+            BaseType %Warlord_83_bases%;
+            Style exalt-tier;
+        }
+    }
+    {
+        ItemLevel = 84;
+        {
+            HasInfluence None;
+            HasValue %Normal_84_bases%;
+            BaseType %Normal_84_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Shaper;
+            HasValue %Shaper_84_bases%;
+            BaseType %Shaper_84_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Elder;
+            HasValue %Elder_84_bases%;
+            BaseType %Elder_84_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Crusader;
+            HasValue %Crusader_84_bases%;
+            BaseType %Crusader_84_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Hunter;
+            HasValue %Hunter_84_bases%;
+            BaseType %Hunter_84_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Redeemer;
+            HasValue %Redeemer_84_bases%;
+            BaseType %Redeemer_84_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Warlord;
+            HasValue %Warlord_84_bases%;
+            BaseType %Warlord_84_bases%;
+            Style exalt-tier;
+        }
+    }
+    {
+        ItemLevel = 85;
+        {
+            HasInfluence None;
+            HasValue %Normal_85_bases%;
+            BaseType %Normal_85_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Shaper;
+            HasValue %Shaper_85_bases%;
+            BaseType %Shaper_85_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Elder;
+            HasValue %Elder_85_bases%;
+            BaseType %Elder_85_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Crusader;
+            HasValue %Crusader_85_bases%;
+            BaseType %Crusader_85_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Hunter;
+            HasValue %Hunter_85_bases%;
+            BaseType %Hunter_85_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Redeemer;
+            HasValue %Redeemer_85_bases%;
+            BaseType %Redeemer_85_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Warlord;
+            HasValue %Warlord_85_bases%;
+            BaseType %Warlord_85_bases%;
+            Style exalt-tier;
+        }
+    }
+    {
+        ItemLevel >= 86;
+        {
+            HasInfluence None;
+            HasValue %Normal_86_bases%;
+            BaseType %Normal_86_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Shaper;
+            HasValue %Shaper_86_bases%;
+            BaseType %Shaper_86_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Elder;
+            HasValue %Elder_86_bases%;
+            BaseType %Elder_86_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Crusader;
+            HasValue %Crusader_86_bases%;
+            BaseType %Crusader_86_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Hunter;
+            HasValue %Hunter_86_bases%;
+            BaseType %Hunter_86_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Redeemer;
+            HasValue %Redeemer_86_bases%;
+            BaseType %Redeemer_86_bases%;
+            Style exalt-tier;
+        }
+        {
+            HasInfluence Warlord;
+            HasValue %Warlord_86_bases%;
+            BaseType %Warlord_86_bases%;
+            Style exalt-tier;
+        }
+        {
+            BaseDefencePercentile 100;
+            HasValue %ArmourBases_T1%;
+            BaseType %ArmourBases_T1%;
+            Style chaos-tier;
+        }
+        {
+            BaseDefencePercentile 100;
+            HasValue %ArmourBases_T2%;
+            BaseType %ArmourBases_T2%;
+            Style meh-tier;
+        }
+    }
+}
+{
+    Sockets = 6;
+    Style chaos-tier recipe;
+}
+{
+    LinkedSockets = 6;
+    Style exalt-tier recipe;
+}
+{
+    HasValue %DivineTier_HelmEnchant%;
+    HasEnchantment %DivineTier_HelmEnchant%;
+    Style exalt-tier;
+}
+{
+    HasValue %ExaltTier_HelmEnchant%;
+    HasEnchantment %ExaltTier_HelmEnchant%;
+    Style divine-tier;
+}
+{
+    Class == "Rings";
+    # Opalescent Oil
+    HasEnchantment == 
+        "Fireball Tower Additional Projectile" "Flamethrower Tower Cast Speed" "Glacial Cage Tower Area of Effect" 
+        "Glacial Cage Tower Increased Damage" "Meteor Tower Additional Meteor" "Scout Tower Speed" "Sentinel Tower Life" 
+        "Sentinel Tower Speed" "Shock Nova Tower Full Damage" "Smothering Tower Reduced Speed" "Summoning Tower Speed";
+    Style chaos-tier;
+}
+{
+    Class == "Rings";
+    # Golden Oil
+    HasEnchantment == 
+        "Arc Tower Chain" "Empowering Tower Special" "Fireball Tower Special" "Imbuing Tower Damage" 
+        "Lightning Storm Tower Explosion Area" "Seismic Tower Additional Cascade" "Seismic Tower Special" 
+        "Shock Nova Tower Shock Effect" "Shock Nova Tower Special" "Smothering Tower Reduced Damage" 
+        "Stone Gaze Tower Petrify Tick Speed" "Temporal Tower Action Speed" "Tower Synergy";
+    # Silver Oil
+    HasEnchantment == 
+        "Arc Tower Repeat" "Chilling Tower Special" "Empowering Tower Cast Speed" "Empowering Tower Damage" 
+        "Imbuing Tower Critical" "Lightning Storm Tower Targeting" "Scout Tower Additional Minion" 
+        "Seismic Tower Stun Duration" "Stone Gaze Tower Cooldown" "Summoning Tower Life" 
+        "Summoning Tower Special" "Temporal Tower Reduced Tick Speed";
+    Style exalt-tier;
+}

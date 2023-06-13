@@ -1,0 +1,17 @@
+Class Gems;
+Style exalt-tier gem;
+
+{
+    BaseType = "Awakened";
+    Style mirror-tier;
+}
+
+{
+    AlternateQuality True;
+    Style mirror-tier;
+}
+
+{
+    BaseType Enlighten Enhance Empower;
+    Style mirror-tier;
+}

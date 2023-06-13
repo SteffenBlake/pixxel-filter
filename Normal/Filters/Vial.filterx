@@ -1,0 +1,55 @@
+Style vial;
+{
+    HasValue %MirrorTier_Vial%;
+    BaseType == %MirrorTier_Vial%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_Vial%;
+    BaseType == %ExaltTier_Vial%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_Vial%;
+    BaseType == %DivineTier_Vial%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_Vial%;
+    BaseType == %ChaosTier_Vial%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_Vial%;
+    BaseType == %MehTier_Vial%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_Vial%;
+    BaseType == %JunkTier_Vial%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}

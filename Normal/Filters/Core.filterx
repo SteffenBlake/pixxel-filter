@@ -1,0 +1,22 @@
+Style base-tier;
+
+using Gear.filterx;
+
+using ClusterJewels.filterx;
+
+using Currency.filterx;
+using DeliriumOrb.filterx;
+using DivinationCard.filterx;
+using Essence.filterx;
+using Flask.filterx;
+using Fossil.filterx;
+using Fragment.filterx;
+using Gems.filterx;
+using Heist.filterx;
+using Incubator.filterx;
+using Invitation.filterx;
+using Map.filterx;
+using Misc.filterx;
+using Oil.filterx;
+using Scarab.filterx;
+using Vial.filterx;

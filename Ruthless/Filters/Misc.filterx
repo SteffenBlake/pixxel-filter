@@ -1,0 +1,12 @@
+Style quest;
+{
+    Class == 
+        "Atlas Upgrade Items" "Incursion Items" "Quest Items" "Microtransactions" "Misc Map Items" "Pantheon Souls"
+        "Labyrinth Items" "Labyrinth Trinkets" "Leaguestones" "Hideout Doodads" "Fishing Rods" "Metamorph Samples";
+    Style special-tier;
+}
+
+{
+    Class == "Pieces" "Expedition Logbooks" "Relic" "Sanctified Relic";
+    Style exalt-tier;
+}

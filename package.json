@@ -1,0 +1,29 @@
+{
+  "name": "pixxel-filter",
+  "version": "1.0.0",
+  "description": "PixxelKick's personally maintained public poefilterx Loot Filter",
+  "main": "./Normal/PixxelFilter-Low.filterx",
+  "author": {
+    "name": "Steffen Blake"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SteffenBlake/PixxelFilter-NPM/issues"
+  },
+  "homepage": "https://github.com/SteffenBlake/PixxelFilter-NPM#readme",
+  "scripts": {
+    "poe-ninja-cache":"",
+
+    "build-normal-low": "poefilterx build -p ./Normal/Low.filterx",
+    "build-normal-med": "poefilterx build -p ./Normal/Med.filterx",
+    "build-normal-high": "poefilterx build -p ./Normal/high.filterx",
+    "build-normal": "npm run build-normal-low && npm run build-normal-med && npm run build-normal-high",
+
+    "build-ruth-low": "poefilterx build -p ./Ruthless/Low.filterx",
+    "build-ruth-med": "poefilterx build -p ./Ruthless/Med.filterx",
+    "build-ruth-high": "poefilterx build -p ./Ruthless/high.filterx",
+    "build-ruth": "npm run build-ruth-low && npm run build-ruth-med && npm run build-ruth-high",
+
+    "build": "npm run build-normal && npm run build-ruth"
+  }
+}

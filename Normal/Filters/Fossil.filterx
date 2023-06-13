@@ -1,0 +1,64 @@
+Style fossil;
+{
+    Class == "Resonator";
+    Style chaos-tier;
+    {
+        Sockets == 4;
+        Style exalt-tier;
+    }
+}
+
+{
+    HasValue %MirrorTier_Fossil%;
+    BaseType == %MirrorTier_Fossil%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_Fossil%;
+    BaseType == %ExaltTier_Fossil%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_Fossil%;
+    BaseType == %DivineTier_Fossil%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_Fossil%;
+    BaseType == %ChaosTier_Fossil%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_Fossil%;
+    BaseType == %MehTier_Fossil%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_Fossil%;
+    BaseType == %JunkTier_Fossil%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}

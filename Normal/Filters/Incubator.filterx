@@ -1,0 +1,56 @@
+Style incubator;
+Class Incubators;
+{
+    HasValue %MirrorTier_Incubator%;
+    BaseType == %MirrorTier_Incubator%;
+    Style mirror-tier;
+}
+{
+    HasValue %ExaltTier_Incubator%;
+    BaseType == %ExaltTier_Incubator%;
+    Style divine-tier;
+    {
+        StackSize > 1;
+        Style mirror-tier;
+    }
+}
+{
+    HasValue %DivineTier_Incubator%;
+    BaseType == %DivineTier_Incubator%;
+    Style exalt-tier;
+    {
+        StackSize > 1;
+        Style divine-tier;
+    }
+}
+{
+    HasValue %ChaosTier_Incubator%;
+    BaseType == %ChaosTier_Incubator%;
+    Style chaos-tier;
+    {
+        StackSize > 10;
+        Style divine-tier;
+    }
+    {
+        StackSize > 1;
+        Style exalt-tier;
+    }
+}
+{
+    HasValue %MehTier_Incubator%;
+    BaseType == %MehTier_Incubator%;
+    Style meh-tier;
+    {
+        StackSize > 4;
+        Style chaos-tier;
+    }
+}
+{
+    HasValue %JunkTier_Incubator%;
+    BaseType == %JunkTier_Incubator%;
+    Style junk-tier;
+    {
+        StackSize > 10;
+        Style meh-tier;
+    }
+}

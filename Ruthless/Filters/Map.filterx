@@ -1,0 +1,14 @@
+Class == Maps;
+Style chaos-tier map;
+{
+    MapTier >= 14;
+    Style divine-tier;
+}
+{
+    BlightedMap True;
+    Style divine-tier;
+}
+{
+    UberBlightedMap True;
+    Style divine-tier;
+}
