@@ -1,37 +1,43 @@
 Style gear;
 {
     Rarity == Unique;
-    {
-        HasValue %MehTier_Limited_Unique%;
-        BaseType == %MehTier_Limited_Unique%;
-        Style special-tier;
-        {
-            LinkedSockets = 6;
-            Style exalt-tier;
-        }
-    }
+    Style unique;
     {
         HasValue %VariedTier_Unique%;
         BaseType == %VariedTier_Unique%;
-        Style special-tier;
+        Style special-tier unique;
         {
             LinkedSockets = 6;
             Style exalt-tier;
         }
     }
     {
-        HasValue %DivineTier_Unique%;
-        BaseType == %DivineTier_Unique%;
-        Style exalt-tier;
+        HasValue %ChaosTier_Unique%;
+        BaseType == %ChaosTier_Unique%;
+        Style chaos-tier unique;
+        {
+            LinkedSockets = 6;
+            Style exalt-tier;
+        }
+    }
+    {
+        HasValue %ExaltTier_Unique%;
+        BaseType == %ExaltTier_Unique%;
+        Style exalt-tier unique;
         {
             LinkedSockets = 6;
             Style divine-tier;
         }
     }
     {
-        HasValue %ExaltTier_Unique%;
-        BaseType == %ExaltTier_Unique%;
-        Style divine-tier;
+        HasValue %DivineTier_Unique%;
+        BaseType == %DivineTier_Unique%;
+        Style divine-tier unique;
+    }
+    {
+        HasValue %MirrorTier_Unique%;
+        BaseType == %MirrorTier_Unique%;
+        Style mirror-tier unique;
     }
 }
 
@@ -47,44 +53,44 @@ Style gear;
         ItemLevel = 82;
         {
             HasInfluence None;
-            HasValue %Normal_82_bases%;
-            BaseType %Normal_82_bases%;
+            HasValue %Normal_82_Bases%;
+            BaseType %Normal_82_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Shaper;
-            HasValue %Shaper_82_bases%;
-            BaseType %Shaper_82_bases%;
+            HasValue %Shaper_82_Bases%;
+            BaseType %Shaper_82_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Elder;
-            HasValue %Elder_82_bases%;
-            BaseType %Elder_82_bases%;
+            HasValue %Elder_82_Bases%;
+            BaseType %Elder_82_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Crusader;
-            HasValue %Crusader_82_bases%;
-            BaseType %Crusader_82_bases%;
+            HasValue %Crusader_82_Bases%;
+            BaseType %Crusader_82_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Hunter;
-            HasValue %Hunter_82_bases%;
-            BaseType %Hunter_82_bases%;
+            HasValue %Hunter_82_Bases%;
+            BaseType %Hunter_82_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Redeemer;
-            HasValue %Redeemer_82_bases%;
-            BaseType %Redeemer_82_bases%;
+            HasValue %Redeemer_82_Bases%;
+            BaseType %Redeemer_82_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Warlord;
-            HasValue %Warlord_82_bases%;
-            BaseType %Warlord_82_bases%;
+            HasValue %Warlord_82_Bases%;
+            BaseType %Warlord_82_Bases%;
             Style exalt-tier;
         }
     }
@@ -92,44 +98,44 @@ Style gear;
         ItemLevel = 83;
         {
             HasInfluence None;
-            HasValue %Normal_83_bases%;
-            BaseType %Normal_83_bases%;
+            HasValue %Normal_83_Bases%;
+            BaseType %Normal_83_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Shaper;
-            HasValue %Shaper_83_bases%;
-            BaseType %Shaper_83_bases%;
+            HasValue %Shaper_83_Bases%;
+            BaseType %Shaper_83_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Elder;
-            HasValue %Elder_83_bases%;
-            BaseType %Elder_83_bases%;
+            HasValue %Elder_83_Bases%;
+            BaseType %Elder_83_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Crusader;
-            HasValue %Crusader_83_bases%;
-            BaseType %Crusader_83_bases%;
+            HasValue %Crusader_83_Bases%;
+            BaseType %Crusader_83_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Hunter;
-            HasValue %Hunter_83_bases%;
-            BaseType %Hunter_83_bases%;
+            HasValue %Hunter_83_Bases%;
+            BaseType %Hunter_83_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Redeemer;
-            HasValue %Redeemer_83_bases%;
-            BaseType %Redeemer_83_bases%;
+            HasValue %Redeemer_83_Bases%;
+            BaseType %Redeemer_83_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Warlord;
-            HasValue %Warlord_83_bases%;
-            BaseType %Warlord_83_bases%;
+            HasValue %Warlord_83_Bases%;
+            BaseType %Warlord_83_Bases%;
             Style exalt-tier;
         }
     }
@@ -137,44 +143,44 @@ Style gear;
         ItemLevel = 84;
         {
             HasInfluence None;
-            HasValue %Normal_84_bases%;
-            BaseType %Normal_84_bases%;
+            HasValue %Normal_84_Bases%;
+            BaseType %Normal_84_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Shaper;
-            HasValue %Shaper_84_bases%;
-            BaseType %Shaper_84_bases%;
+            HasValue %Shaper_84_Bases%;
+            BaseType %Shaper_84_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Elder;
-            HasValue %Elder_84_bases%;
-            BaseType %Elder_84_bases%;
+            HasValue %Elder_84_Bases%;
+            BaseType %Elder_84_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Crusader;
-            HasValue %Crusader_84_bases%;
-            BaseType %Crusader_84_bases%;
+            HasValue %Crusader_84_Bases%;
+            BaseType %Crusader_84_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Hunter;
-            HasValue %Hunter_84_bases%;
-            BaseType %Hunter_84_bases%;
+            HasValue %Hunter_84_Bases%;
+            BaseType %Hunter_84_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Redeemer;
-            HasValue %Redeemer_84_bases%;
-            BaseType %Redeemer_84_bases%;
+            HasValue %Redeemer_84_Bases%;
+            BaseType %Redeemer_84_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Warlord;
-            HasValue %Warlord_84_bases%;
-            BaseType %Warlord_84_bases%;
+            HasValue %Warlord_84_Bases%;
+            BaseType %Warlord_84_Bases%;
             Style exalt-tier;
         }
     }
@@ -182,44 +188,44 @@ Style gear;
         ItemLevel = 85;
         {
             HasInfluence None;
-            HasValue %Normal_85_bases%;
-            BaseType %Normal_85_bases%;
+            HasValue %Normal_85_Bases%;
+            BaseType %Normal_85_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Shaper;
-            HasValue %Shaper_85_bases%;
-            BaseType %Shaper_85_bases%;
+            HasValue %Shaper_85_Bases%;
+            BaseType %Shaper_85_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Elder;
-            HasValue %Elder_85_bases%;
-            BaseType %Elder_85_bases%;
+            HasValue %Elder_85_Bases%;
+            BaseType %Elder_85_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Crusader;
-            HasValue %Crusader_85_bases%;
-            BaseType %Crusader_85_bases%;
+            HasValue %Crusader_85_Bases%;
+            BaseType %Crusader_85_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Hunter;
-            HasValue %Hunter_85_bases%;
-            BaseType %Hunter_85_bases%;
+            HasValue %Hunter_85_Bases%;
+            BaseType %Hunter_85_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Redeemer;
-            HasValue %Redeemer_85_bases%;
-            BaseType %Redeemer_85_bases%;
+            HasValue %Redeemer_85_Bases%;
+            BaseType %Redeemer_85_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Warlord;
-            HasValue %Warlord_85_bases%;
-            BaseType %Warlord_85_bases%;
+            HasValue %Warlord_85_Bases%;
+            BaseType %Warlord_85_Bases%;
             Style exalt-tier;
         }
     }
@@ -227,44 +233,44 @@ Style gear;
         ItemLevel >= 86;
         {
             HasInfluence None;
-            HasValue %Normal_86_bases%;
-            BaseType %Normal_86_bases%;
+            HasValue %Normal_86_Bases%;
+            BaseType %Normal_86_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Shaper;
-            HasValue %Shaper_86_bases%;
-            BaseType %Shaper_86_bases%;
+            HasValue %Shaper_86_Bases%;
+            BaseType %Shaper_86_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Elder;
-            HasValue %Elder_86_bases%;
-            BaseType %Elder_86_bases%;
+            HasValue %Elder_86_Bases%;
+            BaseType %Elder_86_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Crusader;
-            HasValue %Crusader_86_bases%;
-            BaseType %Crusader_86_bases%;
+            HasValue %Crusader_86_Bases%;
+            BaseType %Crusader_86_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Hunter;
-            HasValue %Hunter_86_bases%;
-            BaseType %Hunter_86_bases%;
+            HasValue %Hunter_86_Bases%;
+            BaseType %Hunter_86_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Redeemer;
-            HasValue %Redeemer_86_bases%;
-            BaseType %Redeemer_86_bases%;
+            HasValue %Redeemer_86_Bases%;
+            BaseType %Redeemer_86_Bases%;
             Style exalt-tier;
         }
         {
             HasInfluence Warlord;
-            HasValue %Warlord_86_bases%;
-            BaseType %Warlord_86_bases%;
+            HasValue %Warlord_86_Bases%;
+            BaseType %Warlord_86_Bases%;
             Style exalt-tier;
         }
         {

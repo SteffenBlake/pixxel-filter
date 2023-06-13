@@ -1,7 +1,0 @@
-Style junk-tier;
-
-using ../Core/Core.fss;
-
-using Styles/Low.fss;
-
-using Filters/Core.filterx;

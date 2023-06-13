@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "PixxelKick's personally maintained public poefilterx Loot Filter",
   "main": "./Normal/PixxelFilter-Low.filterx",
+  "type": "module",
   "author": {
     "name": "Steffen Blake"
   },
@@ -12,18 +13,25 @@
   },
   "homepage": "https://github.com/SteffenBlake/PixxelFilter-NPM#readme",
   "scripts": {
-    "poe-ninja-cache":"",
-
-    "build-normal-low": "poefilterx build -p ./Normal/Low.filterx",
-    "build-normal-med": "poefilterx build -p ./Normal/Med.filterx",
-    "build-normal-high": "poefilterx build -p ./Normal/high.filterx",
+    "version": "poefilterx -v",
+    "ninja-cache": "node ./ninja-cache.js",
+    "build-normal-low": "poefilterx build --p ./Norm-Low.filterx --o ./output/Low.filter",
+    "build-normal-med": "poefilterx build --p ./Norm-Med.filterx --o ./output/Med.filter",
+    "build-normal-high": "poefilterx build --p ./Norm-High.filterx --o ./output/High.filter",
     "build-normal": "npm run build-normal-low && npm run build-normal-med && npm run build-normal-high",
-
-    "build-ruth-low": "poefilterx build -p ./Ruthless/Low.filterx",
-    "build-ruth-med": "poefilterx build -p ./Ruthless/Med.filterx",
-    "build-ruth-high": "poefilterx build -p ./Ruthless/high.filterx",
+    "build-ruth-low": "poefilterx build --p ./Ruth-Low.filterx --o ./output/Low.ruthlessfilter",
+    "build-ruth-med": "poefilterx build --p ./Ruth-Med.filterx --o ./output/Med.ruthlessfilter",
+    "build-ruth-high": "poefilterx build --p ./Ruth-High.filterx --o ./output/High.ruthlessfilter",
     "build-ruth": "npm run build-ruth-low && npm run build-ruth-med && npm run build-ruth-high",
-
-    "build": "npm run build-normal && npm run build-ruth"
+    "setup": "mkdirp ./output",
+    "build": "npm run setup && npm run ninja-cache && npm run build-normal && npm run build-ruth"
+  },
+  "dependencies": {
+    "pixxel-filter-shortcuts": "github:SteffenBlake/pixxel-filter-shortcuts",
+    "pixxel-filter-style": "github:SteffenBlake/pixxel-filter-style",
+    "pixxel-ninja-parser": "github:SteffenBlake/pixxel-ninja-parser"
+  },
+  "devDependencies": {
+    "mkdirp": "^3.0.1"
   }
 }
