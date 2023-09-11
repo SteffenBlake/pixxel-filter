@@ -7,6 +7,6 @@ Style quest;
 }
 
 {
-    Class == "Pieces" "Expedition Logbooks" "Relic" "Sanctified Relic";
+    Class == "Pieces" "Expedition Logbooks";
     Style exalt-tier;
 }

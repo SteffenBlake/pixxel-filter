@@ -7,14 +7,26 @@ Style gear;
 {
     Rarity == Rare;
     Style chaos-tier;
+    {
+        ItemLevel <= 68;
+        Style exalt-tier;
+    }
 }
 {
     Rarity == Magic;
     Style meh-tier;
+    {
+        ItemLevel < 68;
+        Style chaos-tier;
+    }
 }
 {
     Rarity == Normal;
     Style junk-tier;
+    {
+        ItemLevel < 68;
+        Style meh-tier;
+    }
 }
 {
     LinkedSockets >= 5;
