@@ -1,6 +1,6 @@
 {
   "name": "pixxel-filter",
-  "version": "1.0.0",
+  "version": "3.25.0",
   "description": "PixxelKick's personally maintained public poefilterx Loot Filter",
   "main": "./Normal/PixxelFilter-Low.filterx",
   "type": "module",

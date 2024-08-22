@@ -15,17 +15,22 @@ Style currency;
 }
 
 {
-    BaseType = Silver Marker Rusted Essence Oil Catalyst Splinter Compass Binding Chance Fusing Horizons Scouring Augment Alchemy Alteration Chromatic Chisel Chaos Glassblower's ;
+    BaseType = Silver Marker Rusted Essence Oil Catalyst Splinter Compass Binding Chance 
+        Fusing Horizons Scouring Augment Alchemy Alteration Chromatic Chisel Chaos 
+        Glassblower's ;
     Style exalt-tier;
 }
 
 {
-    BaseType = Tattoo Omen Gemcutter's Blessing Polished Vial Astragali Exotic Metal Burial Tainted Vaal Sextant Exalted Ember Ichor Unmaking Regal Regret Blessed;
+    BaseType = Tattoo Omen Gemcutter's Blessing Polished Vial Astragali Exotic Metal Burial 
+        Tainted Vaal Sextant Exalted Ember Ichor Unmaking Regal Regret Blessed;
     Style divine-tier;
 }
 
 {
-    BaseType = Fractured Gilded Breachstone Emblem Simulacrum Prime Tailoring Tempering Regrading Divine Annulment Awakener's Crescent Elevated Conflict Dominance Delirium Lock;
+    BaseType = Fractured Gilded Breachstone Emblem Simulacrum Prime Tailoring Tempering 
+        Regrading Divine Annulment Awakener's Crescent Elevated Conflict Dominance 
+        Delirium Lock;
     Style mirror-tier;
 }
 

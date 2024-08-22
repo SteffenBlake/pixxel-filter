@@ -8,11 +8,11 @@ Style chaos-tier recipe;
     LinkedSockets < 5;
 }
 {
-    BaseType == "Stone Hammer" "Rock Breaker" "Gavel";
+    BaseType == "Gavel";
     Quality >= 20;
 }
 {
-    BaseType == "Stone Hammer" "Rock Breaker" "Gavel";
+    BaseType == "Gavel";
     Rarity == Normal;
 }
 {
