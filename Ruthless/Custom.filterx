@@ -1,11 +1,28 @@
 {
-    Class Shields;
-    Corrupted True;
-    Rarity < Rare;
-    Style special-tier gear muted;
+    # Ideal recombinator bases
+    ItemLevel >= 77;
+    Style special-tier gear;
+    Rarity <= Magic;
+    BaseType = 
+        # APS
+        "Short Bow" "Grove Bow" "Thicket Bow"
+        # Crit
+        "Bone Bow" "Ivory Bow" "Spine Bow"
+        # Ele Dmg attacks
+        "Royal Bow" "Highborn Bow" "Imperial Bow"
+        # Movespeed
+        "Reflex Bow" "Steelwood Bow" "Maraketh Bow"
+        # Belts
+        "Leather Belt" "Heavy Belt";
+    Identified False;
+    Corrupted False;
+    Style muted;
 }
 
 {
-    BaseType = "Amethyst Ring" "Bone Ring" "Convoking Wand" "Jade Amulet";
+    BaseType = 
+        "Amethyst Ring" "Bone Ring" 
+        #"Jade Amulet"
+        ;
     Style gear divine-tier;
 }

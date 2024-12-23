@@ -1,0 +1,36 @@
+
+Style currency;
+[
+    Class "Stackable Currency";
+    {
+        Style junk-tier;
+    }
+
+
+    {
+        BaseType = Bronze Artifact Essence Scrap Etcher Whetstone Artificer's Essence;
+        Style chaos-tier;
+    }
+
+    {
+        BaseType = Chaos Alchemy Exalted Regal Bauble Lesser
+            Vaal Silver Distilled Splinter Catalyst Coinage;
+        Style exalt-tier;
+    }
+
+    {
+        BaseType = Chance Annul Prism Greater "Gold Key";
+        Style divine-tier;
+    }
+
+    {
+        BaseType = Perfect Divine Albino Mirror;
+        Style mirror-tier;
+    }
+]
+[
+    {
+        BaseType == "Gold";
+        Style gold-tier muted silent gold;
+    }
+]

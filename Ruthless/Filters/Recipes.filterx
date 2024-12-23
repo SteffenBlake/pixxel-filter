@@ -9,18 +9,5 @@ Style chaos-tier recipe;
 }
 {
     BaseType == "Gavel";
-    Quality >= 20;
-}
-{
-    BaseType == "Gavel";
-    Rarity == Normal;
-}
-{
-    Class Axe Claws Swords Staves Bows Maces Axes Sceptres Daggers Warstaves Wands;
-    Quality >= 14;
-}
-{
-    Class Flask;
-    Rarity < Unique;
-    Quality >= 10;
+    Corrupted False;
 }

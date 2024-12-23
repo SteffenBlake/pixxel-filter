@@ -7,7 +7,7 @@ Style exalt-tier gem;
 }
 
 {
-    AlternateQuality True;
+    TransfiguredGem True;
     Style mirror-tier;
 }
 

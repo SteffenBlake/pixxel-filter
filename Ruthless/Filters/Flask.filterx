@@ -1,18 +1,20 @@
-Class Flask;
-Style flask;
-{
-    Style junk-tier;
-}
-
-{
-    Rarity == Unique;
-    Style chaos-tier;
-}
-
-{
-    BaseType "Quicksilver" "Ruby" "Sapphire" "Topaz" "Gold" "Diamond" "Jade" "Quartz" "Sulphur" "Iron" "Silver" "Stibnite";
+[
+    Class Flask Tincture;
+    Style flask;
     {
-        ItemLevel >= 83;
+        Style junk-tier;
+    }
+
+    {
+        Rarity == Unique;
         Style chaos-tier;
     }
-}
+
+    {
+        BaseType "Quicksilver" "Ruby" "Sapphire" "Topaz" "Gold Flask" "Diamond" "Jade" "Quartz" "Sulphur" "Iron" "Silver" "Stibnite";
+        {
+            ItemLevel >= 83;
+            Style chaos-tier;
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    Class Flasks;
+    Style flask;
+    {
+        Style junk-tier;
+    }
+
+    {
+        Rarity == Unique;
+        Style chaos-tier;
+    }
+]

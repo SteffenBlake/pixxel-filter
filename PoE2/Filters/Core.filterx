@@ -1,0 +1,26 @@
+
+using ../../Core.filterx;
+
+Style base-tier;
+
+{
+    Style junk-tier;
+}
+
+using Gear.filterx;
+
+using Atlas.filterx;
+using Currency.filterx;
+using Flasks.filterx;
+using Fragments.filterx;
+using Gear.filterx;
+using Gems.filterx;
+using Socketable.filterx;
+using Misc.filterx;
+
+using ../Custom.filterx;
+
+{
+    Rarity == Unique;
+    Style divine-tier;
+}

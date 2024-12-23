@@ -1,4 +1,10 @@
-Class Gloves Axe Claws Body Rings Swords Staves Quivers Bows Amulets Maces Axes Sceptres Jewels Daggers Boots Shields Helmets Warstaves Belts Wands;
+
+Class 
+    Claws Daggers Wands "One Hand" Sceptres
+    Spears Flails Bows Staves "Two Hand" Quarterstaves Crossbows Traps Rods
+    Quivers Shields Foci
+    Amulets Rings Belts
+    Gloves Boots Armours Helmets;
 [
     Style gear;
     {
@@ -7,7 +13,7 @@ Class Gloves Axe Claws Body Rings Swords Staves Quivers Bows Amulets Maces Axes 
     }
     {
         Rarity == Rare;
-        Style chaos-tier;
+        Style meh-tier;
         {
             ItemLevel <= 68;
             Style exalt-tier;
@@ -15,10 +21,10 @@ Class Gloves Axe Claws Body Rings Swords Staves Quivers Bows Amulets Maces Axes 
     }
     {
         Rarity == Magic;
-        Style meh-tier;
+        Style junk-tier;
         {
             ItemLevel < 68;
-            Style chaos-tier;
+            Style meh-tier;
         }
     }
     {
@@ -34,7 +40,11 @@ Class Gloves Axe Claws Body Rings Swords Staves Quivers Bows Amulets Maces Axes 
         Style divine-tier;
     }
     {
-        BaseType = "Eye Jewel" "Stygian Vise";
-        Style divine-tier;
+        BaseType = "Jewel";
+        Style exalt-tier;
+        {
+            BaseType = "Time-Lost";
+            Style divine-tier;
+        }
     }
 ]

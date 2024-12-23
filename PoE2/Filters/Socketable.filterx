@@ -1,0 +1,19 @@
+
+Style currency;
+[
+    Class Socketable;
+    {
+        Style junk-tier;
+    }
+
+
+    {
+        BaseType = "Iron Rune";
+        Style chaos-tier;
+    }
+
+    {
+        BaseType = "Soul Core of";
+        Style exalt-tier;
+    }
+]

@@ -1,8 +1,10 @@
 Style quest;
 {
     Class == 
-        "Atlas Upgrade Items" "Incursion Items" "Quest Items" "Microtransactions" "Misc Map Items" "Pantheon Souls"
-        "Labyrinth Items" "Labyrinth Trinkets" "Leaguestones" "Hideout Doodads" "Fishing Rods" "Metamorph Samples";
+        "Atlas Upgrade Items" "Incursion Items" "Quest Items" "Microtransactions" 
+        "Misc Map Items" "Pantheon Souls" "Labyrinth Items" "Labyrinth Trinkets"
+        "Leaguestones" "Hideout Doodads" "Fishing Rods" "Metamorph Samples"
+        "Vault Key" "Charm" "Embers of the Allflame" "Corpses";
     Style special-tier;
 }
 

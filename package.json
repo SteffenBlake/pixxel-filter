@@ -23,6 +23,10 @@
     "build-ruth-med": "poefilterx build --p ./Ruth-Med.filterx --o ./output/Med.ruthlessfilter",
     "build-ruth-high": "poefilterx build --p ./Ruth-High.filterx --o ./output/High.ruthlessfilter",
     "build-ruth": "npm run build-ruth-low && npm run build-ruth-med && npm run build-ruth-high",
+    "build-poe2-low": "poefilterx build --p ./PoE2-Low.filterx --o ./output/PoE2Low.filter",
+    "build-poe2-med": "poefilterx build --p ./PoE2-Med.filterx --o ./output/PoE2Med.filter",
+    "build-poe2-high": "poefilterx build --p ./PoE2-High.filterx --o ./output/PoE2High.filter",
+    "build-poe2": "npm run build-poe2-low && npm run build-poe2-med && npm run build-poe2-high",
     "setup": "mkdirp ./output",
     "build": "npm run setup && npm run ninja-cache && npm run build-normal && npm run build-ruth"
   },

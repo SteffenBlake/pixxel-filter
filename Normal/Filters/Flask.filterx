@@ -11,7 +11,7 @@ Class Flask;
     Style meh-tier recipe;
 }
 {
-    BaseType "Quicksilver" "Ruby" "Sapphire" "Topaz" "Gold" "Diamond" "Jade" "Quartz" "Sulphur" "Iron" "Silver" "Stibnite";
+    BaseType "Quicksilver" "Ruby" "Sapphire" "Topaz" "Gold Flask" "Diamond" "Jade" "Quartz" "Sulphur" "Iron" "Silver" "Stibnite";
     Style junk-tier;
     {
         ItemLevel >= 83;
