@@ -30,6 +30,16 @@ Step 5: Execute `npm run build` to compile all the loot filters, they will outpu
 
 Step 6: Copy the filter(s) you want to your Path of Exile filter folder https://www.poewiki.net/wiki/Guide:Item_filter_guide#Saving_your_Filter
 
+# (Experimental) PoE2 Filter support
+
+I have a WIP PoE2 filter in this project as well, current testing seems to indicate it is working.
+
+The steps to compile it and use it are largely the same, however the command is `npm run build-poe2` instead
+
+You'll need to copy the filter files to your PoE2 folder instead, of course
+
+In game, go to `Menu > Options > Game > Item Filter` and click the folder icon to the right, this should open up your folder where generated .filter files should be placed
+
 # Modifying the output directory
 
 If you want to automatically compile the filters to your PoE loot filter folder, you can modify your copy of `./package.json`, specifically changing the `--o` arguments for all 6 build scripts values to be the absolute path to the folder.
