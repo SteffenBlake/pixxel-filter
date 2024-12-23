@@ -40,7 +40,7 @@ Class
         Style divine-tier;
     }
     {
-        BaseType = "Jewel";
+        Class == "Jewels";
         Style exalt-tier;
         {
             BaseType = "Time-Lost";
