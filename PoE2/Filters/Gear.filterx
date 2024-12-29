@@ -9,7 +9,7 @@ Class
     Style gear;
     {
         Rarity == Unique;
-        Style exalt-tier;
+        Style chaos-tier;
     }
     {
         Rarity == Rare;
@@ -23,7 +23,7 @@ Class
         Rarity == Magic;
         Style junk-tier;
         {
-            ItemLevel < 68;
+            ItemLevel < 30;
             Style meh-tier;
         }
     }
@@ -31,20 +31,17 @@ Class
         Rarity == Normal;
         Style junk-tier;
         {
-            ItemLevel < 68;
+            ItemLevel < 15;
             Style meh-tier;
         }
     }
+]
+
+{
+    Class == "Jewels";
+    Style exalt-tier;
     {
-        LinkedSockets >= 5;
+        BaseType = "Time-Lost";
         Style divine-tier;
     }
-    {
-        Class == "Jewels";
-        Style exalt-tier;
-        {
-            BaseType = "Time-Lost";
-            Style divine-tier;
-        }
-    }
-]
+}

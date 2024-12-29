@@ -7,6 +7,6 @@
 
     {
         Rarity == Unique;
-        Style chaos-tier;
+        Style divine-tier;
     }
 ]

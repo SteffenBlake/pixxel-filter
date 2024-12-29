@@ -6,7 +6,6 @@ Style currency;
         Style junk-tier;
     }
 
-
     {
         BaseType = Bronze Artifact Essence Scrap Etcher Whetstone Artificer's Essence;
         Style chaos-tier;

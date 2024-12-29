@@ -1,6 +1,7 @@
 using Low.fss;
 
 junk-tier {
+    show: False;
     font-size: 20;
     bg-color-alpha: 150;
     alert: disabled;

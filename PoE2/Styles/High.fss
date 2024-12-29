@@ -1,6 +1,7 @@
 using Med.fss;
 
 meh-tier {
+    show: False;
     bg-color: 0x150F2D;
     font-size: 20;
     bg-color-alpha: 150;

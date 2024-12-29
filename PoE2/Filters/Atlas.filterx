@@ -2,7 +2,7 @@
     Class == Waystones;
     Style chaos-tier map;
     {
-        BaseType = "Tier 14" "Tier 15" "Tier 16";
+        WaystoneTier >= 14;
         Style divine-tier;
     }
 }
