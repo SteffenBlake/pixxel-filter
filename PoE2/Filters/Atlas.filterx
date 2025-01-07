@@ -3,7 +3,63 @@
     Style chaos-tier map;
     {
         WaystoneTier >= 14;
-        Style divine-tier;
+        Style exalt-tier;
+    }
+    {
+        AreaLevel >= 78;
+        WaystoneTier < 12;
+        Style meh-tier;
+    }
+    {
+        AreaLevel = 77;
+        WaystoneTier < 11;
+        Style meh-tier;
+    }
+    {
+        AreaLevel = 76;
+        WaystoneTier < 10;
+        Style meh-tier;
+    }
+    {
+        AreaLevel = 75;
+        WaystoneTier < 9;
+        Style meh-tier;
+    }
+
+    {
+        AreaLevel = 74;
+        WaystoneTier < 8;
+        Style meh-tier;
+    }
+    {
+        AreaLevel = 73;
+        WaystoneTier < 7;
+        Style meh-tier;
+    }
+    {
+        AreaLevel = 72;
+        WaystoneTier < 6;
+        Style meh-tier;
+    }
+    {
+        AreaLevel = 71;
+        WaystoneTier < 5;
+        Style meh-tier;
+    }
+    {
+        AreaLevel = 70;
+        WaystoneTier < 4;
+        Style meh-tier;
+    }
+    {
+        AreaLevel = 69;
+        WaystoneTier < 3;
+        Style meh-tier;
+    }
+    {
+        AreaLevel = 68;
+        WaystoneTier < 2;
+        Style meh-tier;
     }
 }
 {

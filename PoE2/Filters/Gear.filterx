@@ -39,7 +39,7 @@ Class
 
 {
     Class == "Jewels";
-    Style exalt-tier;
+    Style gear exalt-tier;
     {
         BaseType = "Time-Lost";
         Style divine-tier;
