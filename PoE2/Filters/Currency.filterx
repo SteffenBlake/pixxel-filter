@@ -7,18 +7,31 @@ Style currency;
     }
 
     {
-        BaseType = Bronze Artifact Essence Scrap Etcher Whetstone Artificer's Essence;
+        BaseType = "Regal Orb" Vaal Lesser Bronze Artifact 
+            Essence Scrap Etcher Whetstone Artificer's;
         Style chaos-tier;
     }
 
     {
-        BaseType = Chaos Alchemy Exalted Regal Bauble Lesser
-            Vaal Silver Distilled Splinter Catalyst Coinage;
+        BaseType = Essence Artifact "Neural Catalyst" "Xoph's Catalyst" "Uul-Netol's Catalyst"
+            "Sibilant Catalyst" "Chayula's Catalyst";
+        Style chaos-tier muted;
+    }
+
+    {
+        BaseType = Chaos Alchemy Exalted Bauble Lesser
+            Silver Distilled Coinage Prism "Chance Shard";
         Style exalt-tier;
     }
 
     {
-        BaseType = Chance Annul Prism Greater "Gold Key";
+        BaseType = Splinter
+            "Adaptive Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Reaver Catalyst";
+        Style exalt-tier muted;
+    }
+
+    {
+        BaseType = "Orb of Chance" Annul Greater "Gold Key";
         Style divine-tier;
     }
 

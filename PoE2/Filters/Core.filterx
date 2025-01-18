@@ -19,8 +19,9 @@ using Socketable.filterx;
 using Misc.filterx;
 
 using ../Custom.filterx;
+using ../Custom.fss;
 
 {
     Rarity == Unique;
-    Style divine-tier;
+    Style special-tier gear muted;
 }
