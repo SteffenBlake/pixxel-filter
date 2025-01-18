@@ -15,8 +15,8 @@ using Flasks.filterx;
 using Fragments.filterx;
 using Gear.filterx;
 using Gems.filterx;
-using Socketable.filterx;
 using Misc.filterx;
+using Socketable.filterx;
 
 using ../Custom.filterx;
 using ../Custom.fss;

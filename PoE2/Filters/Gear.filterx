@@ -1,41 +1,47 @@
+{
+    Class 
+        Claws Daggers Wands "One Hand" Sceptres
+        Spears Flails Bows Staves "Two Hand" Quarterstaves Crossbows Traps Rods
+        Quivers Shields Foci
+        Amulets Rings Belts Charm
+        Gloves Boots Armours Helmets;
+    [
+        Style gear;
+        {
+            Rarity == Unique;
+            Style chaos-tier;
+        }
+        {
+            Rarity == Rare;
+            Style meh-tier;
+            {
+                ItemLevel <= 68;
+                Style exalt-tier;
+            }
+        }
+        {
+            Rarity == Magic;
+            Style junk-tier;
+            {
+                ItemLevel < 30;
+                Style meh-tier;
+            }
+        }
+        {
+            Rarity == Normal;
+            Style junk-tier;
+            {
+                ItemLevel < 15;
+                Style meh-tier;
+            }
+        }
 
-Class 
-    Claws Daggers Wands "One Hand" Sceptres
-    Spears Flails Bows Staves "Two Hand" Quarterstaves Crossbows Traps Rods
-    Quivers Shields Foci
-    Amulets Rings Belts Charm
-    Gloves Boots Armours Helmets;
-[
-    Style gear;
-    {
-        Rarity == Unique;
-        Style chaos-tier;
-    }
-    {
-        Rarity == Rare;
-        Style meh-tier;
         {
-            ItemLevel <= 68;
-            Style exalt-tier;
+            BaseType == "Breach Ring";
+            Style exalt-tier gear;
         }
-    }
-    {
-        Rarity == Magic;
-        Style junk-tier;
-        {
-            ItemLevel < 30;
-            Style meh-tier;
-        }
-    }
-    {
-        Rarity == Normal;
-        Style junk-tier;
-        {
-            ItemLevel < 15;
-            Style meh-tier;
-        }
-    }
-]
+    ]
+}
 
 {
     Class == "Jewels";
