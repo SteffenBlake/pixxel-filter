@@ -47,7 +47,14 @@
     Class == "Jewels";
     Style gear exalt-tier;
     {
-        BaseType = "Time-Lost";
+        BaseType = "Time-Lost" "Diamond";
         Style divine-tier;
     }
+}
+
+# Chancing bases
+{
+    BaseType == "Stellar Amulet" "Sapphire Ring";
+    Rarity  == "Normal";
+    Style exalt-tier gear;
 }
