@@ -7,58 +7,58 @@
     }
     {
         AreaLevel >= 78;
-        WaystoneTier < 12;
+        WaystoneTier < 13;
         Style meh-tier;
     }
     {
         AreaLevel = 77;
-        WaystoneTier < 11;
+        WaystoneTier < 12;
         Style meh-tier;
     }
     {
         AreaLevel = 76;
-        WaystoneTier < 10;
+        WaystoneTier < 11;
         Style meh-tier;
     }
     {
         AreaLevel = 75;
-        WaystoneTier < 9;
+        WaystoneTier < 10;
         Style meh-tier;
     }
 
     {
         AreaLevel = 74;
-        WaystoneTier < 8;
+        WaystoneTier < 9;
         Style meh-tier;
     }
     {
         AreaLevel = 73;
-        WaystoneTier < 7;
+        WaystoneTier < 8;
         Style meh-tier;
     }
     {
         AreaLevel = 72;
-        WaystoneTier < 6;
+        WaystoneTier < 7;
         Style meh-tier;
     }
     {
         AreaLevel = 71;
-        WaystoneTier < 5;
+        WaystoneTier < 6;
         Style meh-tier;
     }
     {
         AreaLevel = 70;
-        WaystoneTier < 4;
+        WaystoneTier < 5;
         Style meh-tier;
     }
     {
         AreaLevel = 69;
-        WaystoneTier < 3;
+        WaystoneTier < 4;
         Style meh-tier;
     }
     {
         AreaLevel = 68;
-        WaystoneTier < 2;
+        WaystoneTier < 3;
         Style meh-tier;
     }
 }
@@ -66,7 +66,7 @@
     Class == Tablet;
     Style exalt-tier map;
     {
-        BaseType == "Precursor Tablet";
+        BaseType == "Precursor Tablet" "Overseer Precursor Tablet";
         Style meh-tier;
     }
 }
