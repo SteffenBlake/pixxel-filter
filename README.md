@@ -14,7 +14,7 @@ PixxelFilter, at its core, is mostly meant to serve a couple purposes.
 
 2. As a testing mechanism, I have been using this loot filter for about a league and a half now and it serves as a very handy way for me to test the performance of PoeFilterX as a tool, get an idea of any types of functionality it may need added, and help highlight any UX issues the tool may be lacking on. Largely speaking this project is my sandbox for testing PoeFilterX out and for awhile was simply just my own personal loot filter, which leads me to...
 
-3. Because why not. I mean I already built the loot filter, it certainly works pretty decent now (though requires a lot more polishing), so after all this work it just made sense to release it public just in case anyone else wants to give it a spin. Don't consider this a final production ready loot filter though, it's pretty buggy and I trust it about as far as I can throw it. The Ruthless filter is *definitely* the far more polished filter though so if you really wanna try it out, use that one!
+3. Because why not. I mean I already built the loot filter, it certainly works pretty decent now (though requires a lot more polishing), so after all this work it just made sense to release it public just in case anyone else wants to give it a spin. Don't consider this a final production ready loot filter though, it's pretty buggy and I trust it about as far as I can throw it. The Ruthless filter is *definitely* the far more polished filter though so if you really wanna try it out, use that one! (Note: I actively use the POE2 filter below and Ive been using it since early access started)
 
 # How to compile this project
 
