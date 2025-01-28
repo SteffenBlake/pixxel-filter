@@ -52,3 +52,4 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./output/*
           tag: ${{ github.ref_name }}
+          file_glob: true
