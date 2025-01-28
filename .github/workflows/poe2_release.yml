@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - "POE2-*"
+  workflow_dispatch:
 
 jobs:
   release:
@@ -51,4 +52,3 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./output/*
           tag: ${{ github.ref_name }}
-
