@@ -1,0 +1,19 @@
+Style gear;
+{
+    BaseType = "Vase Relic" "Coffer Relic" "Incense Relic";
+    Rarity <= Magic;
+    Style meh-tier;
+}
+
+{
+    BaseType = "Coffer Relic" "Amphora Relic" "Tapestry Relic" "Seal Relic";
+    Rarity == Unique;
+    Style meh-tier;
+}
+
+{
+    BaseType = "Vase Relic" "Incense Relic";
+    Rarity == Unique;
+    Style divine-tier;
+}
+

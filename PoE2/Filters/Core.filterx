@@ -16,6 +16,7 @@ using Fragments.filterx;
 using Gear.filterx;
 using Gems.filterx;
 using Misc.filterx;
+using Sekhema.filterx;
 using Socketable.filterx;
 
 using ../Custom.filterx;

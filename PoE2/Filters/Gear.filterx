@@ -51,6 +51,11 @@
         Style divine-tier;
     }
 }
+{
+    BaseType == "Ruby";
+    Rarity <= Rare;
+    Style meh-tier;
+}
 
 # Chancing bases
 {
