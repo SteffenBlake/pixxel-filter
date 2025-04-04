@@ -3,7 +3,7 @@ Style currency;
 [
     Class Socketable;
     {
-        Style junk-tier;
+        Style meh-tier muted;
     }
 
 
@@ -13,7 +13,7 @@ Style currency;
     }
 
     {
-        BaseType = "Soul Core of";
+        BaseType = "Soul Core of" "Talisman" "Greater";
         Style exalt-tier;
     }
 ]

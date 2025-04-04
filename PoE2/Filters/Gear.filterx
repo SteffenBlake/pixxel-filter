@@ -2,7 +2,7 @@
     Class 
         Claws Daggers Wands "One Hand" Sceptres
         Spears Flails Bows Staves "Two Hand" Quarterstaves Crossbows Traps Rods
-        Quivers Shields Foci
+        Quivers Shields Bucklers Foci
         Amulets Rings Belts Charm
         Gloves Boots Armours Helmets;
     [
@@ -37,7 +37,7 @@
         }
 
         {
-            BaseType == "Breach Ring";
+            BaseType == "Breach Ring" "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring";
             Style exalt-tier gear;
         }
     ]

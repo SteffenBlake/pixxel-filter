@@ -31,7 +31,7 @@ Style currency;
     }
 
     {
-        BaseType = "Orb of Chance" Annul Greater "Gold Key";
+        BaseType = "Orb of Chance" Annul Greater Fracturing "Gold Key";
         Style divine-tier;
     }
 
