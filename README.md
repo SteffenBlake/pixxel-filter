@@ -6,6 +6,8 @@ Multiple custom maintained NPM packages work together in tandem here to demonstr
 
 If you are curious for information about what PoeFilterX even is, you can start by checking out the tools github here: https://github.com/SteffenBlake/PoeFilterX 
 
+![Screenshot](./Assets/poe2.png)
+
 # Whats the point of this project
 
 PixxelFilter, at its core, is mostly meant to serve a couple purposes.
