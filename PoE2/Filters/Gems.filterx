@@ -1,8 +1,12 @@
-{
+[
     BaseType = Uncut;
-    Style meh-tier gem;
+    Style gem;
+    {
+        ItemLevel < 20;
+        Style meh-tier;
+    }
     {
         ItemLevel >= 20;
         Style divine-tier;
     }
-}
+]
