@@ -6,12 +6,12 @@ Style currency;
     }
 
     {
-        BaseType = "Iron Rune";
+        BaseType = "Greater Iron Rune";
         Style chaos-tier;
     }
 
     {
-        BaseType = "Soul Core of" "Talisman" "Greater";
+        BaseType = "Soul Core of" "Talisman";
         Style exalt-tier;
     }
 ]
