@@ -65,8 +65,4 @@
 {
     Class == Tablet;
     Style exalt-tier map;
-    {
-        BaseType == "Precursor Tablet";
-        Style meh-tier;
-    }
 }

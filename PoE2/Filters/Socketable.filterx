@@ -1,11 +1,9 @@
-
 Style currency;
 [
     Class Socketable;
     {
         Style meh-tier muted;
     }
-
 
     {
         BaseType = "Iron Rune";
