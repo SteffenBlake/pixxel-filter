@@ -59,7 +59,7 @@
 
 # Chancing bases
 {
-    BaseType == "Stellar Amulet" "Sapphire Ring";
+    BaseType == "Stellar Amulet" "Heavy Belt";
     Rarity  == "Normal";
-    Style exalt-tier gear;
+    Style chaos-tier gear;
 }
