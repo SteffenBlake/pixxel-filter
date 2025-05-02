@@ -7,7 +7,7 @@ Style currency;
     }
 
     {
-        BaseType = "Regal Orb" Vaal Lesser Bronze Artifact 
+        BaseType = "Regal Orb" Vaal Bronze Artifact 
             Essence Scrap Etcher Whetstone Artificer's;
         Style chaos-tier;
     }
@@ -19,7 +19,7 @@ Style currency;
     }
 
     {
-        BaseType = Chaos Alchemy Exalted Bauble Lesser
+        BaseType = Chaos Alchemy Exalted Bauble
             Silver Distilled Coinage Prism "Chance Shard";
         Style exalt-tier;
     }

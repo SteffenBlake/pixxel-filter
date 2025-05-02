@@ -7,3 +7,8 @@ Style quest;
         "Vault Key" "Logbook" "Omen" "Trial" "Ultimatum";
     Style exalt-tier;
 }
+{
+
+    Class = "Trial" "Ultimatum";
+    Style meh-tier;
+}
