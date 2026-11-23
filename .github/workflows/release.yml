@@ -1,0 +1,33 @@
+name: Build release filters
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '11.0.x'
+
+      - name: Install PoeFilterX
+        run: |
+          dotnet tool install --global PoeFilterX --version 3.30.2
+          echo "$HOME/.dotnet/tools" >> "$GITHUB_PATH"
+
+      - name: Build filters
+        run: dotnet run --file build.cs
+
+      - name: Upload filters to release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$RELEASE_TAG" poe1-normal.filter poe1-strict.filter poe1-max.filter --clobber

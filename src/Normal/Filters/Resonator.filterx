@@ -1,0 +1,41 @@
+[
+    Style currency;
+    { HasValue %JunkTier_Resonator%; BaseType == %JunkTier_Resonator%; Style junk-tier; }
+    {
+        HasValue %CommonTier_Resonator%; BaseType == %CommonTier_Resonator%; Style common-tier;
+        { StackSize >= 10; Style useful-tier; }
+    }
+    {
+        HasValue %UsefulTier_Resonator%; BaseType == %UsefulTier_Resonator%; Style useful-tier;
+        {
+            StackSize >= 5; Style valuable-tier;
+            { StackSize >= 15; Style premium-tier; }
+        }
+    }
+    {
+        HasValue %ValuableTier_Resonator%; BaseType == %ValuableTier_Resonator%; Style valuable-tier;
+        {
+            StackSize >= 3; Style premium-tier;
+            { StackSize >= 10; Style exceptional-tier; }
+        }
+    }
+    {
+        HasValue %PremiumTier_Resonator%; BaseType == %PremiumTier_Resonator%; Style premium-tier;
+        {
+            StackSize >= 4; Style exceptional-tier;
+            { StackSize >= 7; Style divine-tier; }
+        }
+    }
+    {
+        HasValue %ExceptionalTier_Resonator%; BaseType == %ExceptionalTier_Resonator%; Style exceptional-tier;
+        {
+            StackSize >= 2; Style divine-tier;
+            { StackSize >= 20; Style mirror-tier; }
+        }
+    }
+    {
+        HasValue %DivineTier_Resonator%; BaseType == %DivineTier_Resonator%; Style divine-tier;
+        { StackSize >= 10; Style mirror-tier; }
+    }
+    { HasValue %MirrorTier_Resonator%; BaseType == %MirrorTier_Resonator%; Style mirror-tier; }
+]

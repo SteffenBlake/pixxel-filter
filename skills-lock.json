@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "skills": {
+    "poefilterx-basetypes": {
+      "source": "SteffenBlake/PoeFilterX",
+      "sourceType": "github",
+      "skillPath": "skills/poefilterx-basetypes/SKILL.md",
+      "computedHash": "51eb1e96e2b173e96eb33df89d9bfffb49c9a41e052add7c29cad0d523af49a7"
+    },
+    "poefilterx-build": {
+      "source": "SteffenBlake/PoeFilterX",
+      "sourceType": "github",
+      "skillPath": "skills/poefilterx-build/SKILL.md",
+      "computedHash": "911da9176885d24ffd124d4d9796486548664338fd3e10ac54bda037f4d4d4b6"
+    },
+    "poefilterx-configuration": {
+      "source": "SteffenBlake/PoeFilterX",
+      "sourceType": "github",
+      "skillPath": "skills/poefilterx-configuration/SKILL.md",
+      "computedHash": "abbc95e9e7903b4fd35c5b9b4b8395c1be7027ebd5b15e11424bddf8126a54e1"
+    },
+    "poefilterx-filterx": {
+      "source": "SteffenBlake/PoeFilterX",
+      "sourceType": "github",
+      "skillPath": "skills/poefilterx-filterx/SKILL.md",
+      "computedHash": "090666c47bda6ad325b8fe970ae5da3de97199d385475b45fb83d7b8a4558271"
+    },
+    "poefilterx-fss": {
+      "source": "SteffenBlake/PoeFilterX",
+      "sourceType": "github",
+      "skillPath": "skills/poefilterx-fss/SKILL.md",
+      "computedHash": "e4a06f7150e392e1562bb98085c53fb66464c6c80c205e8fab2ffdf8a06603ae"
+    },
+    "poefilterx-inspect": {
+      "source": "SteffenBlake/PoeFilterX",
+      "sourceType": "github",
+      "skillPath": "skills/poefilterx-inspect/SKILL.md",
+      "computedHash": "e5d1e1bd155d634f68d25107e8c1d63fc6105098cfbf938a9fb7dfabed45b63a"
+    },
+    "poefilterx-install-or-migrate": {
+      "source": "SteffenBlake/PoeFilterX",
+      "sourceType": "github",
+      "skillPath": "skills/poefilterx-install-or-migrate/SKILL.md",
+      "computedHash": "43a04081117331ba138c0db7e2a1470ceb055c89a2ac4a8ca3a6508128c396a3"
+    },
+    "poefilterx-item-classes": {
+      "source": "SteffenBlake/PoeFilterX",
+      "sourceType": "github",
+      "skillPath": "skills/poefilterx-item-classes/SKILL.md",
+      "computedHash": "92ff841408cdb00f86e36fbee7508692005211ba2e762ae990a672f968027a52"
+    },
+    "poefilterx-packages": {
+      "source": "SteffenBlake/PoeFilterX",
+      "sourceType": "github",
+      "skillPath": "skills/poefilterx-packages/SKILL.md",
+      "computedHash": "daf122707f29526831d846d6f66ac11b19f68cae550aaa6d5ba4e85b31548bcc"
+    }
+  }
+}

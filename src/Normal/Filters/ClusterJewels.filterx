@@ -1,0 +1,24 @@
+{
+    BaseType == "Small Cluster Jewel" "Medium Cluster Jewel" "Large Cluster Jewel";
+    Rarity < Unique;
+    Style gear common-tier;
+    {
+        Corrupted False;
+        ItemLevel >= 75;
+        Style useful-tier;
+        { ItemLevel >= 84; Style valuable-tier; }
+    }
+    {
+        BaseType == "Large Cluster Jewel";
+        EnchantmentPassiveNum == 8;
+        Corrupted False;
+        Style valuable-tier;
+    }
+    {
+        BaseType == "Large Cluster Jewel";
+        EnchantmentPassiveNum == 12;
+        ItemLevel >= 84;
+        Corrupted False;
+        Style premium-tier;
+    }
+}

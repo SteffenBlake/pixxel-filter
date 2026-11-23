@@ -1,0 +1,41 @@
+[
+    Style currency;
+    { HasValue %JunkTier_Artifact%; BaseType == %JunkTier_Artifact%; Style junk-tier; }
+    {
+        HasValue %CommonTier_Artifact%; BaseType == %CommonTier_Artifact%; Style common-tier;
+        { StackSize >= 10; Style useful-tier; }
+    }
+    {
+        HasValue %UsefulTier_Artifact%; BaseType == %UsefulTier_Artifact%; Style useful-tier;
+        {
+            StackSize >= 5; Style valuable-tier;
+            { StackSize >= 15; Style premium-tier; }
+        }
+    }
+    {
+        HasValue %ValuableTier_Artifact%; BaseType == %ValuableTier_Artifact%; Style valuable-tier;
+        {
+            StackSize >= 3; Style premium-tier;
+            { StackSize >= 10; Style exceptional-tier; }
+        }
+    }
+    {
+        HasValue %PremiumTier_Artifact%; BaseType == %PremiumTier_Artifact%; Style premium-tier;
+        {
+            StackSize >= 4; Style exceptional-tier;
+            { StackSize >= 7; Style divine-tier; }
+        }
+    }
+    {
+        HasValue %ExceptionalTier_Artifact%; BaseType == %ExceptionalTier_Artifact%; Style exceptional-tier;
+        {
+            StackSize >= 2; Style divine-tier;
+            { StackSize >= 20; Style mirror-tier; }
+        }
+    }
+    {
+        HasValue %DivineTier_Artifact%; BaseType == %DivineTier_Artifact%; Style divine-tier;
+        { StackSize >= 10; Style mirror-tier; }
+    }
+    { HasValue %MirrorTier_Artifact%; BaseType == %MirrorTier_Artifact%; Style mirror-tier; }
+]

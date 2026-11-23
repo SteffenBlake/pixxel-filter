@@ -1,0 +1,4 @@
+{
+    Class == "Relics" "Small Relics" "Medium Relics" "Large Relics" "Sanctum Research";
+    Style gear valuable-tier;
+}

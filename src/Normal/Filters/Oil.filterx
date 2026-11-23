@@ -1,0 +1,57 @@
+[
+    Style oil;
+    { HasValue %JunkTier_Oil%; BaseType == %JunkTier_Oil%; Style junk-tier; }
+    {
+        HasValue %CommonTier_Oil%;
+        BaseType == %CommonTier_Oil%;
+        Style common-tier;
+        { StackSize >= 10; Style useful-tier; }
+    }
+    {
+        HasValue %UsefulTier_Oil%;
+        BaseType == %UsefulTier_Oil%;
+        Style useful-tier;
+        {
+            StackSize >= 5;
+            Style valuable-tier;
+            { StackSize >= 15; Style premium-tier; }
+        }
+    }
+    {
+        HasValue %ValuableTier_Oil%;
+        BaseType == %ValuableTier_Oil%;
+        Style valuable-tier;
+        {
+            StackSize >= 3;
+            Style premium-tier;
+            { StackSize >= 10; Style exceptional-tier; }
+        }
+    }
+    {
+        HasValue %PremiumTier_Oil%;
+        BaseType == %PremiumTier_Oil%;
+        Style premium-tier;
+        {
+            StackSize >= 4;
+            Style exceptional-tier;
+            { StackSize >= 7; Style divine-tier; }
+        }
+    }
+    {
+        HasValue %ExceptionalTier_Oil%;
+        BaseType == %ExceptionalTier_Oil%;
+        Style exceptional-tier;
+        {
+            StackSize >= 2;
+            Style divine-tier;
+            { StackSize >= 20; Style mirror-tier; }
+        }
+    }
+    {
+        HasValue %DivineTier_Oil%;
+        BaseType == %DivineTier_Oil%;
+        Style divine-tier;
+        { StackSize >= 10; Style mirror-tier; }
+    }
+    { HasValue %MirrorTier_Oil%; BaseType == %MirrorTier_Oil%; Style mirror-tier; }
+]

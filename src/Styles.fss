@@ -1,0 +1,170 @@
+/* Label backgrounds use the sampled palette and approved OKLab midpoint.
+   Icon shapes come from Icons.fss; tiers supply size and matching icon/beam colors.
+   Icon size 0 is largest. */
+
+hidden {
+    show: false;
+    icon: disabled;
+    pillar: disabled;
+    alert: disabled;
+    drop-sound: disabled;
+}
+
+junk-tier {
+    show: false;
+    font-size: 20;
+    font-color: 0xFFFFFF;
+    font-color-alpha: 150;
+    border-color: 0xFFFFFF;
+    border-color-alpha: 150;
+    bg-color: 0x2D4451;
+    bg-color-alpha: 150;
+    icon: enabled;
+    icon-size: 2;
+    icon-color: Grey;
+    pillar: enabled;
+    pillar-color: Grey;
+    pillar-duration: Temporary;
+    alert: 11 100;
+}
+
+common-tier {
+    show: false;
+    font-size: 24;
+    font-color: 0xFFFFFF;
+    font-color-alpha: 150;
+    border-color: 0xFFFFFF;
+    border-color-alpha: 150;
+    bg-color: 0x1C586F;
+    bg-color-alpha: 150;
+    icon: enabled;
+    icon-size: 2;
+    icon-color: Grey;
+    pillar: enabled;
+    pillar-color: Grey;
+    pillar-duration: Temporary;
+    alert: 12 100;
+}
+
+useful-tier {
+    show: false;
+    font-size: 28;
+    font-color: 0xFFFFFF;
+    font-color-alpha: 150;
+    border-color: 0xFFFFFF;
+    border-color-alpha: 150;
+    bg-color: 0x10738D;
+    bg-color-alpha: 150;
+    icon: enabled;
+    icon-size: 2;
+    icon-color: Cyan;
+    pillar: enabled;
+    pillar-color: Cyan;
+    pillar-duration: Temporary;
+    alert: 3 200;
+}
+
+valuable-tier {
+    show: true;
+    font-size: 32;
+    font-color: 0xFFFFFF;
+    border-color: 0xFFFFFF;
+    bg-color: 0x0784B5;
+    icon: enabled;
+    icon-size: 1;
+    icon-color: Cyan;
+    pillar: enabled;
+    pillar-color: Cyan;
+    pillar-duration: Permanent;
+    alert: 5 200;
+}
+
+premium-tier {
+    show: true;
+    font-size: 36;
+    font-color: 0xFFFFFF;
+    border-color: 0xFFFFFF;
+    bg-color: 0x4861A5;
+    icon: enabled;
+    icon-size: 1;
+    icon-color: Blue;
+    pillar: enabled;
+    pillar-color: Blue;
+    pillar-duration: Permanent;
+    alert: 1 200;
+}
+
+exceptional-tier {
+    show: true;
+    font-size: 40;
+    font-color: 0xFFFFFF;
+    border-color: 0xFFFFFF;
+    bg-color: 0x583A94;
+    icon: enabled;
+    icon-size: 1;
+    icon-color: Purple;
+    pillar: enabled;
+    pillar-color: Purple;
+    pillar-duration: Permanent;
+    alert: 1 300;
+}
+
+divine-tier {
+    show: true;
+    font-size: 45;
+    font-color: 0xFFFFFF;
+    border-color: 0xFFFFFF;
+    bg-color: 0x583A94;
+    icon: enabled;
+    icon-size: 0;
+    icon-color: Pink;
+    pillar: enabled;
+    pillar-color: Pink;
+    pillar-duration: Permanent;
+    alert: 6 200;
+}
+
+mirror-tier {
+    show: true;
+    font-size: 45;
+    font-color: 0xFFFFFF;
+    border-color: 0xFFFFFF;
+    bg-color: 0x583A94;
+    icon: enabled;
+    icon-size: 0;
+    icon-color: White;
+    pillar: enabled;
+    pillar-color: White;
+    pillar-duration: Permanent;
+    alert: 6 300;
+}
+
+/* Shown for emergency pickups, with minimal visual noise.
+   Keep some opacity: fully transparent labels would be impossible to find. */
+scroll-tier {
+    show: true;
+    font-size: 1;
+    font-color: transparent;
+    border-color: black;
+    bg-color: transparent;
+    icon-size: 2;
+    icon-shape: UpsideDownHouse;
+    pillar: disabled;
+    alert: disabled;
+    drop-sound: disabled;
+}
+
+portal-scroll {
+    icon-color: Brown;
+    bg-color: 0x452004;
+}
+
+wisdom-scroll {
+    icon-color: Blue;
+    bg-color: 0x06067D;
+}
+
+gold {
+    icon-color: Yellow;
+    bg-color: 0xFFA600;
+}

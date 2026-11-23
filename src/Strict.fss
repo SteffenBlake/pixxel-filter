@@ -1,0 +1,6 @@
+useful-tier {
+    show: true;
+    font-color-alpha: 255;
+    border-color-alpha: 255;
+    bg-color-alpha: 255;
+}

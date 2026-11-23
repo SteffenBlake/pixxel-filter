@@ -1,0 +1,62 @@
+currency {
+    icon-shape: Circle;
+}
+fossil {
+    icon-shape: Circle;
+}
+
+gear {
+    icon-shape: Diamond;
+}
+
+map {
+    icon-shape: Hexagon;
+}
+
+divination-card {
+    icon-shape: Square;
+}
+
+unique {
+    icon-shape: Star;
+}
+
+recipe {
+    icon-shape: Triangle;
+}
+
+fragment {
+    icon-shape: Cross;
+}
+scarab {
+    icon-shape: Cross;
+}
+essence {
+    icon-shape: Cross;
+}
+
+flask {
+    icon-shape: Raindrop;
+}
+oil {
+    icon-shape: Raindrop;
+}
+vial {
+    icon-shape: Raindrop;
+}
+
+
+gem {
+    icon-shape: Kite;
+}
+incubator {
+    icon-shape: Kite;
+}
+
+quest {
+    icon-shape: Pentagon;
+}
+
+heist {
+    icon-shape: UpsideDownHouse;
+}

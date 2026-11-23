@@ -1,0 +1,8 @@
+# Path of Exile 1 Max entrypoint: shared filter and strictest baseline styles.
+using .ninja-cache/poe1.json;
+using Icons.fss;
+using Styles.fss;
+
+Style junk-tier;
+
+using Normal/Filters/Core.filterx;

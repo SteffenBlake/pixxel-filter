@@ -1,0 +1,41 @@
+[
+    Style currency;
+    { HasValue %JunkTier_Runegraft%; BaseType == %JunkTier_Runegraft%; Style junk-tier; }
+    {
+        HasValue %CommonTier_Runegraft%; BaseType == %CommonTier_Runegraft%; Style common-tier;
+        { StackSize >= 10; Style useful-tier; }
+    }
+    {
+        HasValue %UsefulTier_Runegraft%; BaseType == %UsefulTier_Runegraft%; Style useful-tier;
+        {
+            StackSize >= 5; Style valuable-tier;
+            { StackSize >= 15; Style premium-tier; }
+        }
+    }
+    {
+        HasValue %ValuableTier_Runegraft%; BaseType == %ValuableTier_Runegraft%; Style valuable-tier;
+        {
+            StackSize >= 3; Style premium-tier;
+            { StackSize >= 10; Style exceptional-tier; }
+        }
+    }
+    {
+        HasValue %PremiumTier_Runegraft%; BaseType == %PremiumTier_Runegraft%; Style premium-tier;
+        {
+            StackSize >= 4; Style exceptional-tier;
+            { StackSize >= 7; Style divine-tier; }
+        }
+    }
+    {
+        HasValue %ExceptionalTier_Runegraft%; BaseType == %ExceptionalTier_Runegraft%; Style exceptional-tier;
+        {
+            StackSize >= 2; Style divine-tier;
+            { StackSize >= 20; Style mirror-tier; }
+        }
+    }
+    {
+        HasValue %DivineTier_Runegraft%; BaseType == %DivineTier_Runegraft%; Style divine-tier;
+        { StackSize >= 10; Style mirror-tier; }
+    }
+    { HasValue %MirrorTier_Runegraft%; BaseType == %MirrorTier_Runegraft%; Style mirror-tier; }
+]

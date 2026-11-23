@@ -1,0 +1,69 @@
+{
+    Class == "Divination Cards";
+    Style divination-card common-tier;
+}
+[
+    Style divination-card;
+    {
+        HasValue %JunkTier_DivinationCard%;
+        BaseType == %JunkTier_DivinationCard%;
+        Style junk-tier;
+    }
+    {
+        HasValue %CommonTier_DivinationCard%;
+        BaseType == %CommonTier_DivinationCard%;
+        Style common-tier;
+        { StackSize >= 10; Style useful-tier; }
+    }
+    {
+        HasValue %UsefulTier_DivinationCard%;
+        BaseType == %UsefulTier_DivinationCard%;
+        Style useful-tier;
+        {
+            StackSize >= 5;
+            Style valuable-tier;
+            { StackSize >= 15; Style premium-tier; }
+        }
+    }
+    {
+        HasValue %ValuableTier_DivinationCard%;
+        BaseType == %ValuableTier_DivinationCard%;
+        Style valuable-tier;
+        {
+            StackSize >= 3;
+            Style premium-tier;
+            { StackSize >= 10; Style exceptional-tier; }
+        }
+    }
+    {
+        HasValue %PremiumTier_DivinationCard%;
+        BaseType == %PremiumTier_DivinationCard%;
+        Style premium-tier;
+        {
+            StackSize >= 4;
+            Style exceptional-tier;
+            { StackSize >= 7; Style divine-tier; }
+        }
+    }
+    {
+        HasValue %ExceptionalTier_DivinationCard%;
+        BaseType == %ExceptionalTier_DivinationCard%;
+        Style exceptional-tier;
+        {
+            StackSize >= 2;
+            Style divine-tier;
+            { StackSize >= 20; Style mirror-tier; }
+        }
+    }
+    {
+        HasValue %DivineTier_DivinationCard%;
+        BaseType == %DivineTier_DivinationCard%;
+        Style divine-tier;
+        { StackSize >= 10; Style mirror-tier; }
+    }
+    {
+        HasValue %MirrorTier_DivinationCard%;
+        BaseType == %MirrorTier_DivinationCard%;
+        Style mirror-tier;
+    }
+]

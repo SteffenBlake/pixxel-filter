@@ -1,0 +1,41 @@
+[
+    Style scarab;
+    { HasValue %JunkTier_Scarab%; BaseType == %JunkTier_Scarab%; Style junk-tier; }
+    {
+        HasValue %CommonTier_Scarab%; BaseType == %CommonTier_Scarab%; Style common-tier;
+        { StackSize >= 10; Style useful-tier; }
+    }
+    {
+        HasValue %UsefulTier_Scarab%; BaseType == %UsefulTier_Scarab%; Style useful-tier;
+        {
+            StackSize >= 5; Style valuable-tier;
+            { StackSize >= 15; Style premium-tier; }
+        }
+    }
+    {
+        HasValue %ValuableTier_Scarab%; BaseType == %ValuableTier_Scarab%; Style valuable-tier;
+        {
+            StackSize >= 3; Style premium-tier;
+            { StackSize >= 10; Style exceptional-tier; }
+        }
+    }
+    {
+        HasValue %PremiumTier_Scarab%; BaseType == %PremiumTier_Scarab%; Style premium-tier;
+        {
+            StackSize >= 4; Style exceptional-tier;
+            { StackSize >= 7; Style divine-tier; }
+        }
+    }
+    {
+        HasValue %ExceptionalTier_Scarab%; BaseType == %ExceptionalTier_Scarab%; Style exceptional-tier;
+        {
+            StackSize >= 2; Style divine-tier;
+            { StackSize >= 20; Style mirror-tier; }
+        }
+    }
+    {
+        HasValue %DivineTier_Scarab%; BaseType == %DivineTier_Scarab%; Style divine-tier;
+        { StackSize >= 10; Style mirror-tier; }
+    }
+    { HasValue %MirrorTier_Scarab%; BaseType == %MirrorTier_Scarab%; Style mirror-tier; }
+]

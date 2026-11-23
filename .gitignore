@@ -1,3 +1,4 @@
-/ninja-cache/
-/node_modules/
-/output/
+/environment.json
+*.filter
+/artifacts/
+.vscode/

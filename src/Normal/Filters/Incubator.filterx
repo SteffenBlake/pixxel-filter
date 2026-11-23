@@ -1,0 +1,16 @@
+{
+    Class == Incubators;
+    Style incubator common-tier;
+}
+# Incubators do not stack.
+[
+    Style incubator;
+    { HasValue %JunkTier_Incubator%; BaseType == %JunkTier_Incubator%; Style junk-tier; }
+    { HasValue %CommonTier_Incubator%; BaseType == %CommonTier_Incubator%; Style common-tier; }
+    { HasValue %UsefulTier_Incubator%; BaseType == %UsefulTier_Incubator%; Style useful-tier; }
+    { HasValue %ValuableTier_Incubator%; BaseType == %ValuableTier_Incubator%; Style valuable-tier; }
+    { HasValue %PremiumTier_Incubator%; BaseType == %PremiumTier_Incubator%; Style premium-tier; }
+    { HasValue %ExceptionalTier_Incubator%; BaseType == %ExceptionalTier_Incubator%; Style exceptional-tier; }
+    { HasValue %DivineTier_Incubator%; BaseType == %DivineTier_Incubator%; Style divine-tier; }
+    { HasValue %MirrorTier_Incubator%; BaseType == %MirrorTier_Incubator%; Style mirror-tier; }
+]

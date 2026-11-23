@@ -1,0 +1,8 @@
+{
+    Class == Maps;
+    Rarity < Unique;
+    Style map useful-tier;
+    { MapTier >= 14; Style premium-tier; }
+    { BlightedMap True; Style premium-tier; }
+    { UberBlightedMap True; Style divine-tier; }
+}

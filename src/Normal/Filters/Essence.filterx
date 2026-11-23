@@ -1,0 +1,41 @@
+[
+    Style essence;
+    { HasValue %JunkTier_Essence%; BaseType == %JunkTier_Essence%; Style junk-tier; }
+    {
+        HasValue %CommonTier_Essence%; BaseType == %CommonTier_Essence%; Style common-tier;
+        { StackSize >= 10; Style useful-tier; }
+    }
+    {
+        HasValue %UsefulTier_Essence%; BaseType == %UsefulTier_Essence%; Style useful-tier;
+        {
+            StackSize >= 5; Style valuable-tier;
+            { StackSize >= 15; Style premium-tier; }
+        }
+    }
+    {
+        HasValue %ValuableTier_Essence%; BaseType == %ValuableTier_Essence%; Style valuable-tier;
+        {
+            StackSize >= 3; Style premium-tier;
+            { StackSize >= 10; Style exceptional-tier; }
+        }
+    }
+    {
+        HasValue %PremiumTier_Essence%; BaseType == %PremiumTier_Essence%; Style premium-tier;
+        {
+            StackSize >= 4; Style exceptional-tier;
+            { StackSize >= 7; Style divine-tier; }
+        }
+    }
+    {
+        HasValue %ExceptionalTier_Essence%; BaseType == %ExceptionalTier_Essence%; Style exceptional-tier;
+        {
+            StackSize >= 2; Style divine-tier;
+            { StackSize >= 20; Style mirror-tier; }
+        }
+    }
+    {
+        HasValue %DivineTier_Essence%; BaseType == %DivineTier_Essence%; Style divine-tier;
+        { StackSize >= 10; Style mirror-tier; }
+    }
+    { HasValue %MirrorTier_Essence%; BaseType == %MirrorTier_Essence%; Style mirror-tier; }
+]

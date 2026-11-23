@@ -1,0 +1,4 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SteffenBlake/PoeFilterX/main/schemas/poefilterx.schema.json",
+  "entrypoint": "poe1-strict.entrypoint.filterx"
+}

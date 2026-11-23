@@ -1,0 +1,10 @@
+# Last category: both scrolls stay shown, tiny, and faint for emergency pickups.
+{
+    BaseType == "Scroll of Wisdom";
+    Style wisdom-scroll scroll-tier;
+}
+
+{
+    BaseType == "Portal Scroll";
+    Style portal-scroll scroll-tier;
+}

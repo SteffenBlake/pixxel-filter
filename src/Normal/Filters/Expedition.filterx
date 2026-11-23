@@ -1,0 +1,4 @@
+{
+    Class == "Expedition Logbooks";
+    Style map valuable-tier;
+}

@@ -1,0 +1,4 @@
+{
+    Class == Corpses;
+    Style currency useful-tier;
+}

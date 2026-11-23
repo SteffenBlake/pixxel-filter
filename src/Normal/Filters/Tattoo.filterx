@@ -1,0 +1,41 @@
+[
+    Style currency;
+    { HasValue %JunkTier_Tattoo%; BaseType == %JunkTier_Tattoo%; Style junk-tier; }
+    {
+        HasValue %CommonTier_Tattoo%; BaseType == %CommonTier_Tattoo%; Style common-tier;
+        { StackSize >= 10; Style useful-tier; }
+    }
+    {
+        HasValue %UsefulTier_Tattoo%; BaseType == %UsefulTier_Tattoo%; Style useful-tier;
+        {
+            StackSize >= 5; Style valuable-tier;
+            { StackSize >= 15; Style premium-tier; }
+        }
+    }
+    {
+        HasValue %ValuableTier_Tattoo%; BaseType == %ValuableTier_Tattoo%; Style valuable-tier;
+        {
+            StackSize >= 3; Style premium-tier;
+            { StackSize >= 10; Style exceptional-tier; }
+        }
+    }
+    {
+        HasValue %PremiumTier_Tattoo%; BaseType == %PremiumTier_Tattoo%; Style premium-tier;
+        {
+            StackSize >= 4; Style exceptional-tier;
+            { StackSize >= 7; Style divine-tier; }
+        }
+    }
+    {
+        HasValue %ExceptionalTier_Tattoo%; BaseType == %ExceptionalTier_Tattoo%; Style exceptional-tier;
+        {
+            StackSize >= 2; Style divine-tier;
+            { StackSize >= 20; Style mirror-tier; }
+        }
+    }
+    {
+        HasValue %DivineTier_Tattoo%; BaseType == %DivineTier_Tattoo%; Style divine-tier;
+        { StackSize >= 10; Style mirror-tier; }
+    }
+    { HasValue %MirrorTier_Tattoo%; BaseType == %MirrorTier_Tattoo%; Style mirror-tier; }
+]
