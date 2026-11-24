@@ -2,6 +2,7 @@
 # Baseline rules deliberately have no influence condition; known influences follow.
 [
     Rarity < Unique;
+    ItemLevel >= 82;
     Corrupted False;
     Mirrored False;
     Style gear;

@@ -1,18 +1,14 @@
 # Baseline gem rules; retired alternate-quality gem rules are not carried over.
 {
     Class == "Skill Gems" "Support Gems";
-    Style gem common-tier;
+    Style gem junk-tier;
     {
-        Quality >= 20;
-        Style useful-tier;
+        GemLevel >= 21;
+        Style common-tier;
     }
     {
-        GemLevel >= 20;
-        Style valuable-tier;
-        {
-            GemLevel >= 21;
-            Style premium-tier;
-        }
+        Quality >= 21;
+        Style common-tier;
     }
     {
         BaseType = Awakened;

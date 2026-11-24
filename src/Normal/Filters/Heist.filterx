@@ -1,8 +1,15 @@
-{
-    Class == "Contracts" "Blueprints" "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Tools" "Trinkets";
-    Style heist useful-tier;
-}
-{
-    Class == "Heist Targets";
-    Style heist valuable-tier;
-}
+[
+    Style heist;
+    {
+        Class == "Contracts";
+        Style junk-tier;
+    }
+    {
+        Class == "Heist Brooches" "Heist Cloaks" "Heist Gear" "Heist Tools" "Trinkets";
+        Style useful-tier;
+    }
+    {
+        Class == "Blueprints" "Heist Targets";
+        Style valuable-tier;
+    }
+]

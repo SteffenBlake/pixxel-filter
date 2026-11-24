@@ -345,7 +345,7 @@ sealed class Compiler
             Add($"{Tier((range.Min + range.Max) / 2m)}_Unique", name);
         foreach (var (item, price) in bases)
         {
-            string tier = price >= 50 ? "ExceptionalTier" : price >= 5 ? "ValuableTier" : "WorthlessTier";
+            string tier = price >= 50 ? "ExceptionalTier" : price >= 15 ? "ValuableTier" : "WorthlessTier";
             string level = item.Level == 0 ? "Any" : item.Level.ToString(CultureInfo.InvariantCulture);
             Add($"{tier}_{item.Influence}_{level}_Bases", item.Name);
         }
@@ -448,9 +448,9 @@ sealed class Compiler
             """)!);
         compiler.Stash("BaseType", JsonNode.Parse("""
             {"lines":[{"name":"Test Base","chaosValue":20,"listingCount":50,"levelRequired":84},
-                      {"name":"Test Base","chaosValue":5,"listingCount":50,"levelRequired":85},
+                      {"name":"Test Base","chaosValue":15,"listingCount":50,"levelRequired":85},
                       {"name":"Test Base","chaosValue":50,"listingCount":50,"levelRequired":87},
-                      {"name":"Cheap Base","chaosValue":4,"listingCount":50,"levelRequired":82},
+                      {"name":"Cheap Base","chaosValue":14.99,"listingCount":50,"levelRequired":82},
                       {"name":"Influenced Base","chaosValue":50,"listingCount":50,"levelRequired":83,"variant":"Hunter"},
                       {"name":"Double Base","chaosValue":100,"listingCount":100,"variant":"Shaper/Hunter"},
                       {"name":"Rare Listing","chaosValue":100,"listingCount":1}]}
@@ -477,7 +477,7 @@ sealed class Compiler
         Check(!output.ContainsKey("ValuableTier_Normal_Any_Bases"), "higher-level prices never populate unrestricted bucket");
         Check(!output.ContainsKey("ValuableTier_Normal_83_Bases"), "higher-level prices never populate lower-level bucket");
         Check(output["ValuableTier_Normal_84_Bases"]?[0]?.GetValue<string>() == "Test Base", "exact item-level bucket");
-        Check(output["ValuableTier_Normal_85_Bases"]?[0]?.GetValue<string>() == "Test Base", "inclusive five-chaos threshold");
+        Check(output["ValuableTier_Normal_85_Bases"]?[0]?.GetValue<string>() == "Test Base", "inclusive fifteen-chaos threshold");
         Check(output["ExceptionalTier_Normal_86_Bases"]?[0]?.GetValue<string>() == "Test Base", "86-plus bucket, inclusive fifty-chaos threshold");
         Check(output["WorthlessTier_Normal_Any_Bases"]?[0]?.GetValue<string>() == "Cheap Base", "cheap bases retained without item-level restriction");
         Check(output["ExceptionalTier_Hunter_83_Bases"]?[0]?.GetValue<string>() == "Influenced Base", "influence-specific base bucket");
