@@ -1,41 +1,67 @@
 [
     Style fragment;
-    { HasValue %JunkTier_Thread%; BaseType == %JunkTier_Thread%; Style junk-tier; }
+    {
+        HasValue %MehTier_Thread%;
+        BaseType == %MehTier_Thread%;
+        Style meh-tier;
+    }
     {
         HasValue %CommonTier_Thread%; BaseType == %CommonTier_Thread%; Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_Thread%; BaseType == %UsefulTier_Thread%; Style useful-tier;
         {
             StackSize >= 5; Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
         HasValue %ValuableTier_Thread%; BaseType == %ValuableTier_Thread%; Style valuable-tier;
         {
             StackSize >= 3; Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
         HasValue %PremiumTier_Thread%; BaseType == %PremiumTier_Thread%; Style premium-tier;
         {
             StackSize >= 4; Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
         HasValue %ExceptionalTier_Thread%; BaseType == %ExceptionalTier_Thread%; Style exceptional-tier;
         {
             StackSize >= 2; Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_Thread%; BaseType == %DivineTier_Thread%; Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
-    { HasValue %MirrorTier_Thread%; BaseType == %MirrorTier_Thread%; Style mirror-tier; }
+    {
+        HasValue %MirrorTier_Thread%;
+        BaseType == %MirrorTier_Thread%;
+        Style mirror-tier;
+    }
 ]

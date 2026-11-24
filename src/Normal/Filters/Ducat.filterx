@@ -1,41 +1,67 @@
 [
     Style currency;
-    { HasValue %JunkTier_Ducat%; BaseType == %JunkTier_Ducat%; Style junk-tier; }
+    {
+        HasValue %MehTier_Ducat%;
+        BaseType == %MehTier_Ducat%;
+        Style meh-tier;
+    }
     {
         HasValue %CommonTier_Ducat%; BaseType == %CommonTier_Ducat%; Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_Ducat%; BaseType == %UsefulTier_Ducat%; Style useful-tier;
         {
             StackSize >= 5; Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
         HasValue %ValuableTier_Ducat%; BaseType == %ValuableTier_Ducat%; Style valuable-tier;
         {
             StackSize >= 3; Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
         HasValue %PremiumTier_Ducat%; BaseType == %PremiumTier_Ducat%; Style premium-tier;
         {
             StackSize >= 4; Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
         HasValue %ExceptionalTier_Ducat%; BaseType == %ExceptionalTier_Ducat%; Style exceptional-tier;
         {
             StackSize >= 2; Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_Ducat%; BaseType == %DivineTier_Ducat%; Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
-    { HasValue %MirrorTier_Ducat%; BaseType == %MirrorTier_Ducat%; Style mirror-tier; }
+    {
+        HasValue %MirrorTier_Ducat%;
+        BaseType == %MirrorTier_Ducat%;
+        Style mirror-tier;
+    }
 ]

@@ -47,7 +47,7 @@ All three profiles share the same category rules. Stylesheets control which tier
 
 | Profile | Visible value tiers | Output |
 | --- | --- | --- |
-| `poe1-normal` | Junk and above | `poe1-normal.filter` |
+| `poe1-normal` | Trash and above | `poe1-normal.filter` |
 | `poe1-strict` | Useful and above | `poe1-strict.filter` |
 | `poe1-max` | Valuable and above | `poe1-max.filter` |
 
@@ -57,7 +57,7 @@ The cache script assigns supported items to tiers using these inclusive lower bo
 
 | Tier | Minimum Chaos value |
 | --- | ---: |
-| `junk-tier` | 0 |
+| `meh-tier` | 0 |
 | `common-tier` | 0.1 |
 | `useful-tier` | 1 |
 | `valuable-tier` | 5 |

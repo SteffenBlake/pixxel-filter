@@ -2,5 +2,8 @@
     Class == "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Critical Utility Flasks";
     Rarity < Unique;
     Style flask junk-tier;
-    { Quality >= 20; Style common-tier; }
+    {
+        Quality >= 20;
+        Style common-tier;
+    }
 }

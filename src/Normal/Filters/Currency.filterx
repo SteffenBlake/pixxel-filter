@@ -1,22 +1,25 @@
 {
     Class == "Stackable Currency" "Currency" "Delve Socketable Currency" "Delve Stackable Socketable Currency";
-    Style currency junk-tier;
+    Style currency meh-tier;
 }
 
 # Approximate stack value from the tier floor; at most two promotions.
-# A zero junk-tier floor does not give a meaningful promotion threshold.
+# A zero meh-tier floor does not give a meaningful promotion threshold.
 [
     Style currency;
     {
-        HasValue %JunkTier_Currency%;
-        BaseType == %JunkTier_Currency%;
-        Style junk-tier;
+        HasValue %MehTier_Currency%;
+        BaseType == %MehTier_Currency%;
+        Style meh-tier;
     }
     {
         HasValue %CommonTier_Currency%;
         BaseType == %CommonTier_Currency%;
         Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_Currency%;
@@ -25,7 +28,10 @@
         {
             StackSize >= 5;
             Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
@@ -35,7 +41,10 @@
         {
             StackSize >= 3;
             Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
@@ -45,7 +54,10 @@
         {
             StackSize >= 4;
             Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
@@ -55,14 +67,20 @@
         {
             StackSize >= 2;
             Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_Currency%;
         BaseType == %DivineTier_Currency%;
         Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
     {
         HasValue %MirrorTier_Currency%;

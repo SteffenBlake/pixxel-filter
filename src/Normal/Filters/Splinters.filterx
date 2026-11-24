@@ -5,9 +5,9 @@
     BaseType = Splinter;
     Style fragment;
     {
-        HasValue %JunkTier_Currency% %JunkTier_Fragment%;
-        BaseType == %JunkTier_Currency% %JunkTier_Fragment%;
-        Style junk-tier;
+        HasValue %MehTier_Currency% %MehTier_Fragment%;
+        BaseType == %MehTier_Currency% %MehTier_Fragment%;
+        Style meh-tier;
     }
     {
         HasValue %CommonTier_Currency% %CommonTier_Fragment%;
@@ -16,7 +16,10 @@
         {
             StackSize >= 10;
             Style useful-tier;
-            { StackSize >= 50; Style valuable-tier; }
+            {
+                StackSize >= 50;
+                Style valuable-tier;
+            }
         }
     }
     {
@@ -26,7 +29,10 @@
         {
             StackSize >= 5;
             Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
@@ -36,7 +42,10 @@
         {
             StackSize >= 3;
             Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
@@ -46,7 +55,10 @@
         {
             StackSize >= 4;
             Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
@@ -56,14 +68,20 @@
         {
             StackSize >= 2;
             Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_Currency% %DivineTier_Fragment%;
         BaseType == %DivineTier_Currency% %DivineTier_Fragment%;
         Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
     {
         HasValue %MirrorTier_Currency% %MirrorTier_Fragment%;

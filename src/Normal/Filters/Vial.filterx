@@ -1,41 +1,67 @@
 [
     Style vial;
-    { HasValue %JunkTier_Vial%; BaseType == %JunkTier_Vial%; Style junk-tier; }
+    {
+        HasValue %MehTier_Vial%;
+        BaseType == %MehTier_Vial%;
+        Style meh-tier;
+    }
     {
         HasValue %CommonTier_Vial%; BaseType == %CommonTier_Vial%; Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_Vial%; BaseType == %UsefulTier_Vial%; Style useful-tier;
         {
             StackSize >= 5; Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
         HasValue %ValuableTier_Vial%; BaseType == %ValuableTier_Vial%; Style valuable-tier;
         {
             StackSize >= 3; Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
         HasValue %PremiumTier_Vial%; BaseType == %PremiumTier_Vial%; Style premium-tier;
         {
             StackSize >= 4; Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
         HasValue %ExceptionalTier_Vial%; BaseType == %ExceptionalTier_Vial%; Style exceptional-tier;
         {
             StackSize >= 2; Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_Vial%; BaseType == %DivineTier_Vial%; Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
-    { HasValue %MirrorTier_Vial%; BaseType == %MirrorTier_Vial%; Style mirror-tier; }
+    {
+        HasValue %MirrorTier_Vial%;
+        BaseType == %MirrorTier_Vial%;
+        Style mirror-tier;
+    }
 ]

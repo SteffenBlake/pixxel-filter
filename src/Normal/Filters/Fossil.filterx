@@ -1,41 +1,67 @@
 [
     Style fossil;
-    { HasValue %JunkTier_Fossil%; BaseType == %JunkTier_Fossil%; Style junk-tier; }
+    {
+        HasValue %MehTier_Fossil%;
+        BaseType == %MehTier_Fossil%;
+        Style meh-tier;
+    }
     {
         HasValue %CommonTier_Fossil%; BaseType == %CommonTier_Fossil%; Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_Fossil%; BaseType == %UsefulTier_Fossil%; Style useful-tier;
         {
             StackSize >= 5; Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
         HasValue %ValuableTier_Fossil%; BaseType == %ValuableTier_Fossil%; Style valuable-tier;
         {
             StackSize >= 3; Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
         HasValue %PremiumTier_Fossil%; BaseType == %PremiumTier_Fossil%; Style premium-tier;
         {
             StackSize >= 4; Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
         HasValue %ExceptionalTier_Fossil%; BaseType == %ExceptionalTier_Fossil%; Style exceptional-tier;
         {
             StackSize >= 2; Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_Fossil%; BaseType == %DivineTier_Fossil%; Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
-    { HasValue %MirrorTier_Fossil%; BaseType == %MirrorTier_Fossil%; Style mirror-tier; }
+    {
+        HasValue %MirrorTier_Fossil%;
+        BaseType == %MirrorTier_Fossil%;
+        Style mirror-tier;
+    }
 ]

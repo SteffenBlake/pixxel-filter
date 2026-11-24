@@ -212,12 +212,13 @@ sealed class Compiler
 {
     // Inclusive Chaos thresholds. Names are labels, not floating currency conversion rates.
     static readonly (string Name, decimal Minimum)[] Tiers = [
-        ("JunkTier", 0m), ("CommonTier", 0.1m), ("UsefulTier", 1m),
+        ("MehTier", 0m), ("CommonTier", 0.1m), ("UsefulTier", 1m),
         ("ValuableTier", 5m), ("PremiumTier", 15m), ("ExceptionalTier", 50m),
         ("DivineTier", 100m), ("MirrorTier", 1000m)
     ];
     readonly SortedDictionary<string, SortedSet<string>> groups = new(StringComparer.Ordinal);
     readonly Dictionary<string, (decimal Min, decimal Max)> uniques = new(StringComparer.Ordinal);
+    readonly Dictionary<(string Name, string Influence, int Level), decimal> bases = new();
     readonly Dictionary<(string Category, string Name), decimal> prices = new();
 
     void Price(string category, string name, decimal price)
@@ -275,14 +276,17 @@ sealed class Compiler
 
     public void Stash(string category, JsonNode data)
     {
+        bool uniqueCategory = category.StartsWith("Unique", StringComparison.Ordinal) || category is "ForbiddenJewel" or "ShrineBelt";
         foreach (var node in Lines(category, data))
         {
             var line = node ?? throw new InvalidDataException($"{category}: null item line.");
+            // Price ordinary unidentified drops, without linked, corrupted or foil premiums.
+            if (uniqueCategory && (Number(line, "links") >= 5 || Flag(line, "corrupted") || Number(line, "itemClass", 3) != 3)) continue;
             decimal price = Number(line, "chaosValue", -1m);
             if (price < 0) throw new InvalidDataException($"{category}: missing or negative chaosValue.");
             string name = Text(line, "name");
             string tier = Tier(price);
-            if (category.StartsWith("Unique", StringComparison.Ordinal) || category is "ForbiddenJewel" or "ShrineBelt")
+            if (uniqueCategory)
             {
                 string baseType = Text(line, "baseType");
                 if (baseType.Length == 0) throw new InvalidDataException($"{category}: missing unique base type.");
@@ -292,9 +296,17 @@ sealed class Compiler
             else if (category == "BaseType")
             {
                 string variant = Text(line, "variant");
-                if (Number(line, "listingCount") < 50 || price < 20 || variant.Contains('/')) continue;
+                if (Number(line, "listingCount") < 50 || variant.Contains('/')) continue;
                 if (variant.Length == 0) variant = "Normal";
-                Add($"{tier}_{variant}_{Number(line, "levelRequired")}_Bases", name);
+                if (variant is not ("Normal" or "Shaper" or "Elder" or "Crusader" or "Redeemer" or "Hunter" or "Warlord")) continue;
+                // Minimum price across each minimum-item-level range avoids promoting
+                // higher-level drops using an expensive, scarce lower-level listing.
+                foreach (int level in new[] { 0, 83, 84, 85, 86 })
+                {
+                    if (Number(line, "levelRequired") < level) continue;
+                    var key = (name, variant, level);
+                    bases[key] = bases.TryGetValue(key, out decimal previous) ? Math.Min(previous, price) : price;
+                }
             }
             else if (category == "ClusterJewel")
             {
@@ -332,7 +344,13 @@ sealed class Compiler
             Add($"{Tier(price)}_{item.Category}", item.Name);
         }
         foreach (var (name, range) in uniques)
-            Add($"{(Tier(range.Min) == Tier(range.Max) ? Tier(range.Max) : "VariedTier")}_Unique", name);
+            Add($"{Tier((range.Min + range.Max) / 2m)}_Unique", name);
+        foreach (var (item, price) in bases)
+        {
+            string tier = price >= 50 ? "ExceptionalTier" : price >= 5 ? "ValuableTier" : "WorthlessTier";
+            string level = item.Level == 0 ? "Any" : item.Level.ToString(CultureInfo.InvariantCulture);
+            Add($"{tier}_{item.Influence}_{level}_Bases", item.Name);
+        }
         var output = new JsonObject();
         foreach (var (key, names) in groups)
             output[key] = new JsonArray(names.Select(x => (JsonNode?)JsonValue.Create(x)).ToArray());
@@ -403,7 +421,7 @@ sealed class Compiler
             if (!condition) throw new InvalidOperationException("Self-test failed: " + message);
             checks++;
         }
-        Check(Tier(0) == "JunkTier", "zero price");
+        Check(Tier(0) == "MehTier", "zero price starts at visual tier three");
         foreach (var tier in Tiers)
             Check(Tier(tier.Minimum) == tier.Name, "inclusive boundary " + tier.Name);
         Check(Tier(99.99m) == "ExceptionalTier", "below boundary");
@@ -415,10 +433,27 @@ sealed class Compiler
             """)!);
         compiler.Stash("UniqueWeapon", JsonNode.Parse("""
             {"lines":[{"name":"A","baseType":"Test Sword","chaosValue":1},
-                      {"name":"B","baseType":"Test Sword","chaosValue":1001}]}
+                      {"name":"B","baseType":"Test Sword","chaosValue":1001},
+                      {"name":"Linked","baseType":"Test Sword","chaosValue":200000,"links":6},
+                      {"name":"Linked","baseType":"Test Sword","chaosValue":100000,"links":5},
+                      {"name":"Corrupted","baseType":"Test Sword","chaosValue":300000,"corrupted":true},
+                      {"name":"Foil","baseType":"Test Sword","chaosValue":400000,"itemClass":9},
+                      {"name":"Foil","baseType":"Test Sword","chaosValue":500000,"itemClass":10},
+                      {"name":"Linked only","baseType":"Linked Only Base","chaosValue":100000,"links":6}]}
+            """)!);
+        compiler.Stash("UniqueArmour", JsonNode.Parse("""
+            {"lines":[{"name":"C","baseType":"Test Sword","chaosValue":3},
+                      {"name":"D","baseType":"Single Price Base","chaosValue":15},
+                      {"name":"E","baseType":"Boundary Base","chaosValue":40},
+                      {"name":"F","baseType":"Boundary Base","chaosValue":60},
+                      {"name":"G","baseType":"Boundary Base","chaosValue":42}]}
             """)!);
         compiler.Stash("BaseType", JsonNode.Parse("""
             {"lines":[{"name":"Test Base","chaosValue":20,"listingCount":50,"levelRequired":84},
+                      {"name":"Test Base","chaosValue":5,"listingCount":50,"levelRequired":85},
+                      {"name":"Test Base","chaosValue":50,"listingCount":50,"levelRequired":87},
+                      {"name":"Cheap Base","chaosValue":4,"listingCount":50,"levelRequired":82},
+                      {"name":"Influenced Base","chaosValue":50,"listingCount":50,"levelRequired":83,"variant":"Hunter"},
                       {"name":"Double Base","chaosValue":100,"listingCount":100,"variant":"Shaper/Hunter"},
                       {"name":"Rare Listing","chaosValue":100,"listingCount":1}]}
             """)!);
@@ -435,8 +470,18 @@ sealed class Compiler
         Check(output["DivineTier_Currency"]?[0]?.GetValue<string>() == "Test Orb", "exchange conversion and metadata join");
         Check(output["UsefulTier_Currency"]?[0]?.GetValue<string>() == "Chaos Orb", "synthetic Chaos");
         Check(!output.Any(x => (x.Value as JsonArray)?.Any(n => n?.GetValue<string>() == "Scroll of Wisdom") == true), "scrolls excluded from economy tiers");
-        Check(output["VariedTier_Unique"]?[0]?.GetValue<string>() == "Test Sword", "unique base ranges");
-        Check((output["PremiumTier_Normal_84_Bases"] as JsonArray)?.Count == 1, "base filters");
+        Check(compiler.uniques["Test Sword"] == (1m, 1001m), "unique min/max across categories ignore special prices");
+        Check(output["DivineTier_Unique"]?[0]?.GetValue<string>() == "Test Sword", "unique range midpoint selects tier");
+        Check(output["PremiumTier_Unique"]?[0]?.GetValue<string>() == "Single Price Base", "single unique price");
+        Check(output["ExceptionalTier_Unique"]?[0]?.GetValue<string>() == "Boundary Base", "unique midpoint at inclusive threshold");
+        Check(!output.ContainsKey("VariedTier_Unique"), "no varied unique tier");
+        Check(!compiler.uniques.ContainsKey("Linked Only Base"), "special-only bases are excluded");
+        Check(output["ValuableTier_Normal_Any_Bases"]?[0]?.GetValue<string>() == "Test Base", "unrestricted base bucket");
+        Check(output["ValuableTier_Normal_84_Bases"]?[0]?.GetValue<string>() == "Test Base", "base range uses minimum price, inclusive five-chaos threshold");
+        Check(output["ExceptionalTier_Normal_86_Bases"]?[0]?.GetValue<string>() == "Test Base", "86-plus bucket, inclusive fifty-chaos threshold");
+        Check(output["WorthlessTier_Normal_Any_Bases"]?[0]?.GetValue<string>() == "Cheap Base", "cheap bases retained without item-level restriction");
+        Check(output["ExceptionalTier_Hunter_83_Bases"]?[0]?.GetValue<string>() == "Influenced Base", "influence-specific base bucket");
+        Check(!output.Any(x => x.Key.EndsWith("_Bases", StringComparison.Ordinal) && (x.Value as JsonArray)!.Any(n => n!.GetValue<string>() is "Double Base" or "Rare Listing")), "dual influence and sparse listings excluded");
         Check(output["PremiumTier_Large_P12_i84_ClusterJewel"]?[0]?.GetValue<string>() == "Minion Damage", "cluster translation");
         Check((output["PremiumTier_L1_Q20_Uncorrupted_SkillGem"] as JsonArray)?.Count == 1, "gem dimensions and deduplication");
         Check(!output.Any(x => x.Key.Contains("L21", StringComparison.Ordinal)), "ambiguous Vaal display names omitted");

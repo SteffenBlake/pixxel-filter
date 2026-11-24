@@ -1,41 +1,67 @@
 [
     Style fragment;
-    { HasValue %JunkTier_Invitation%; BaseType == %JunkTier_Invitation%; Style junk-tier; }
+    {
+        HasValue %MehTier_Invitation%;
+        BaseType == %MehTier_Invitation%;
+        Style meh-tier;
+    }
     {
         HasValue %CommonTier_Invitation%; BaseType == %CommonTier_Invitation%; Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_Invitation%; BaseType == %UsefulTier_Invitation%; Style useful-tier;
         {
             StackSize >= 5; Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
         HasValue %ValuableTier_Invitation%; BaseType == %ValuableTier_Invitation%; Style valuable-tier;
         {
             StackSize >= 3; Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
         HasValue %PremiumTier_Invitation%; BaseType == %PremiumTier_Invitation%; Style premium-tier;
         {
             StackSize >= 4; Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
         HasValue %ExceptionalTier_Invitation%; BaseType == %ExceptionalTier_Invitation%; Style exceptional-tier;
         {
             StackSize >= 2; Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_Invitation%; BaseType == %DivineTier_Invitation%; Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
-    { HasValue %MirrorTier_Invitation%; BaseType == %MirrorTier_Invitation%; Style mirror-tier; }
+    {
+        HasValue %MirrorTier_Invitation%;
+        BaseType == %MirrorTier_Invitation%;
+        Style mirror-tier;
+    }
 ]

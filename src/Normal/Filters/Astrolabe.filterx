@@ -1,15 +1,18 @@
 [
     Style map;
     {
-        HasValue %JunkTier_Astrolabe%;
-        BaseType == %JunkTier_Astrolabe%;
-        Style junk-tier;
+        HasValue %MehTier_Astrolabe%;
+        BaseType == %MehTier_Astrolabe%;
+        Style meh-tier;
     }
     {
         HasValue %CommonTier_Astrolabe%;
         BaseType == %CommonTier_Astrolabe%;
         Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_Astrolabe%;
@@ -18,7 +21,10 @@
         {
             StackSize >= 5;
             Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
@@ -28,7 +34,10 @@
         {
             StackSize >= 3;
             Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
@@ -38,7 +47,10 @@
         {
             StackSize >= 4;
             Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
@@ -48,14 +60,20 @@
         {
             StackSize >= 2;
             Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_Astrolabe%;
         BaseType == %DivineTier_Astrolabe%;
         Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
     {
         HasValue %MirrorTier_Astrolabe%;

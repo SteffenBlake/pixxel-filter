@@ -1,0 +1,4 @@
+{
+    Class == "Quest Items" "Atlas Upgrade Items" "Incursion Items" "Pantheon Souls" "Labyrinth Items" "Labyrinth Trinkets" "Fishing Rods";
+    Style quest special-tier;
+}

@@ -3,6 +3,6 @@ using .ninja-cache/poe1.json;
 using Icons.fss;
 using Styles.fss;
 
-Style junk-tier;
+Style trash-tier;
 
 using Normal/Filters/Core.filterx;

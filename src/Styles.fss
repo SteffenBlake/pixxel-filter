@@ -10,14 +10,50 @@ hidden {
     drop-sound: disabled;
 }
 
-junk-tier {
+trash-tier {
     show: false;
     font-size: 20;
     font-color: 0xFFFFFF;
     font-color-alpha: 150;
     border-color: 0xFFFFFF;
     border-color-alpha: 150;
-    bg-color: 0x2D4451;
+    bg-color: 0x392718;
+    bg-color-alpha: 150;
+    icon: enabled;
+    icon-size: 2;
+    icon-color: Brown;
+    pillar: enabled;
+    pillar-color: Brown;
+    pillar-duration: Temporary;
+    alert: disabled;
+}
+
+junk-tier {
+    show: false;
+    font-size: 23;
+    font-color: 0xFFFFFF;
+    font-color-alpha: 150;
+    border-color: 0xFFFFFF;
+    border-color-alpha: 150;
+    bg-color: 0x563D28;
+    bg-color-alpha: 150;
+    icon: enabled;
+    icon-size: 2;
+    icon-color: Brown;
+    pillar: enabled;
+    pillar-color: Brown;
+    pillar-duration: Temporary;
+    alert: disabled;
+}
+
+meh-tier {
+    show: false;
+    font-size: 26;
+    font-color: 0xFFFFFF;
+    font-color-alpha: 150;
+    border-color: 0xFFFFFF;
+    border-color-alpha: 150;
+    bg-color: 0x4D4A3F;
     bg-color-alpha: 150;
     icon: enabled;
     icon-size: 2;
@@ -30,7 +66,7 @@ junk-tier {
 
 common-tier {
     show: false;
-    font-size: 24;
+    font-size: 29;
     font-color: 0xFFFFFF;
     font-color-alpha: 150;
     border-color: 0xFFFFFF;
@@ -48,7 +84,7 @@ common-tier {
 
 useful-tier {
     show: false;
-    font-size: 28;
+    font-size: 33;
     font-color: 0xFFFFFF;
     font-color-alpha: 150;
     border-color: 0xFFFFFF;
@@ -66,7 +102,7 @@ useful-tier {
 
 valuable-tier {
     show: true;
-    font-size: 32;
+    font-size: 36;
     font-color: 0xFFFFFF;
     border-color: 0xFFFFFF;
     bg-color: 0x0784B5;
@@ -81,7 +117,7 @@ valuable-tier {
 
 premium-tier {
     show: true;
-    font-size: 36;
+    font-size: 39;
     font-color: 0xFFFFFF;
     border-color: 0xFFFFFF;
     bg-color: 0x4861A5;
@@ -96,7 +132,7 @@ premium-tier {
 
 exceptional-tier {
     show: true;
-    font-size: 40;
+    font-size: 42;
     font-color: 0xFFFFFF;
     border-color: 0xFFFFFF;
     bg-color: 0x583A94;
@@ -139,6 +175,21 @@ mirror-tier {
     alert: 6 300;
 }
 
+special-tier {
+    show: true;
+    font-size: 36;
+    font-color: 0xFFFFFF;
+    border-color: 0xFFFFFF;
+    bg-color: 0xB27A01;
+    icon: enabled;
+    icon-size: 1;
+    icon-color: Orange;
+    pillar: enabled;
+    pillar-color: Orange;
+    pillar-duration: Permanent;
+    alert: 5 200;
+}
+
 /* Shown for emergency pickups, with minimal visual noise.
    Keep some opacity: fully transparent labels would be impossible to find. */
 scroll-tier {
@@ -160,8 +211,8 @@ portal-scroll {
 }
 
 wisdom-scroll {
-    icon-color: Blue;
-    bg-color: 0x06067D;
+    icon-color: Green;
+    bg-color: 0x327E32;
 }
 
 gold {

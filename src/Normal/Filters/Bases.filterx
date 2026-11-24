@@ -1,0 +1,463 @@
+# Cheap or unpriced bases retain the existing rarity and unidentified-tier rules.
+# Baseline rules deliberately have no influence condition; known influences follow.
+[
+    Rarity < Unique;
+    Corrupted False;
+    Mirrored False;
+    Style gear;
+
+    [
+        {
+            HasValue %ValuableTier_Normal_Any_Bases%;
+            BaseType == %ValuableTier_Normal_Any_Bases%;
+            Style valuable-tier;
+        }
+        {
+            HasValue %ExceptionalTier_Normal_Any_Bases%;
+            BaseType == %ExceptionalTier_Normal_Any_Bases%;
+            Style exceptional-tier;
+        }
+        [
+            ItemLevel >= 83;
+            {
+                HasValue %ValuableTier_Normal_83_Bases%;
+                BaseType == %ValuableTier_Normal_83_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Normal_83_Bases%;
+                BaseType == %ExceptionalTier_Normal_83_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 84;
+            {
+                HasValue %ValuableTier_Normal_84_Bases%;
+                BaseType == %ValuableTier_Normal_84_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Normal_84_Bases%;
+                BaseType == %ExceptionalTier_Normal_84_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 85;
+            {
+                HasValue %ValuableTier_Normal_85_Bases%;
+                BaseType == %ValuableTier_Normal_85_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Normal_85_Bases%;
+                BaseType == %ExceptionalTier_Normal_85_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 86;
+            {
+                HasValue %ValuableTier_Normal_86_Bases%;
+                BaseType == %ValuableTier_Normal_86_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Normal_86_Bases%;
+                BaseType == %ExceptionalTier_Normal_86_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+    ]
+    [
+        HasInfluence Shaper;
+        {
+            HasValue %ValuableTier_Shaper_Any_Bases%;
+            BaseType == %ValuableTier_Shaper_Any_Bases%;
+            Style valuable-tier;
+        }
+        {
+            HasValue %ExceptionalTier_Shaper_Any_Bases%;
+            BaseType == %ExceptionalTier_Shaper_Any_Bases%;
+            Style exceptional-tier;
+        }
+        [
+            ItemLevel >= 83;
+            {
+                HasValue %ValuableTier_Shaper_83_Bases%;
+                BaseType == %ValuableTier_Shaper_83_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Shaper_83_Bases%;
+                BaseType == %ExceptionalTier_Shaper_83_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 84;
+            {
+                HasValue %ValuableTier_Shaper_84_Bases%;
+                BaseType == %ValuableTier_Shaper_84_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Shaper_84_Bases%;
+                BaseType == %ExceptionalTier_Shaper_84_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 85;
+            {
+                HasValue %ValuableTier_Shaper_85_Bases%;
+                BaseType == %ValuableTier_Shaper_85_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Shaper_85_Bases%;
+                BaseType == %ExceptionalTier_Shaper_85_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 86;
+            {
+                HasValue %ValuableTier_Shaper_86_Bases%;
+                BaseType == %ValuableTier_Shaper_86_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Shaper_86_Bases%;
+                BaseType == %ExceptionalTier_Shaper_86_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+    ]
+    [
+        HasInfluence Elder;
+        {
+            HasValue %ValuableTier_Elder_Any_Bases%;
+            BaseType == %ValuableTier_Elder_Any_Bases%;
+            Style valuable-tier;
+        }
+        {
+            HasValue %ExceptionalTier_Elder_Any_Bases%;
+            BaseType == %ExceptionalTier_Elder_Any_Bases%;
+            Style exceptional-tier;
+        }
+        [
+            ItemLevel >= 83;
+            {
+                HasValue %ValuableTier_Elder_83_Bases%;
+                BaseType == %ValuableTier_Elder_83_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Elder_83_Bases%;
+                BaseType == %ExceptionalTier_Elder_83_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 84;
+            {
+                HasValue %ValuableTier_Elder_84_Bases%;
+                BaseType == %ValuableTier_Elder_84_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Elder_84_Bases%;
+                BaseType == %ExceptionalTier_Elder_84_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 85;
+            {
+                HasValue %ValuableTier_Elder_85_Bases%;
+                BaseType == %ValuableTier_Elder_85_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Elder_85_Bases%;
+                BaseType == %ExceptionalTier_Elder_85_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 86;
+            {
+                HasValue %ValuableTier_Elder_86_Bases%;
+                BaseType == %ValuableTier_Elder_86_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Elder_86_Bases%;
+                BaseType == %ExceptionalTier_Elder_86_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+    ]
+    [
+        HasInfluence Crusader;
+        {
+            HasValue %ValuableTier_Crusader_Any_Bases%;
+            BaseType == %ValuableTier_Crusader_Any_Bases%;
+            Style valuable-tier;
+        }
+        {
+            HasValue %ExceptionalTier_Crusader_Any_Bases%;
+            BaseType == %ExceptionalTier_Crusader_Any_Bases%;
+            Style exceptional-tier;
+        }
+        [
+            ItemLevel >= 83;
+            {
+                HasValue %ValuableTier_Crusader_83_Bases%;
+                BaseType == %ValuableTier_Crusader_83_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Crusader_83_Bases%;
+                BaseType == %ExceptionalTier_Crusader_83_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 84;
+            {
+                HasValue %ValuableTier_Crusader_84_Bases%;
+                BaseType == %ValuableTier_Crusader_84_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Crusader_84_Bases%;
+                BaseType == %ExceptionalTier_Crusader_84_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 85;
+            {
+                HasValue %ValuableTier_Crusader_85_Bases%;
+                BaseType == %ValuableTier_Crusader_85_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Crusader_85_Bases%;
+                BaseType == %ExceptionalTier_Crusader_85_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 86;
+            {
+                HasValue %ValuableTier_Crusader_86_Bases%;
+                BaseType == %ValuableTier_Crusader_86_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Crusader_86_Bases%;
+                BaseType == %ExceptionalTier_Crusader_86_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+    ]
+    [
+        HasInfluence Redeemer;
+        {
+            HasValue %ValuableTier_Redeemer_Any_Bases%;
+            BaseType == %ValuableTier_Redeemer_Any_Bases%;
+            Style valuable-tier;
+        }
+        {
+            HasValue %ExceptionalTier_Redeemer_Any_Bases%;
+            BaseType == %ExceptionalTier_Redeemer_Any_Bases%;
+            Style exceptional-tier;
+        }
+        [
+            ItemLevel >= 83;
+            {
+                HasValue %ValuableTier_Redeemer_83_Bases%;
+                BaseType == %ValuableTier_Redeemer_83_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Redeemer_83_Bases%;
+                BaseType == %ExceptionalTier_Redeemer_83_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 84;
+            {
+                HasValue %ValuableTier_Redeemer_84_Bases%;
+                BaseType == %ValuableTier_Redeemer_84_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Redeemer_84_Bases%;
+                BaseType == %ExceptionalTier_Redeemer_84_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 85;
+            {
+                HasValue %ValuableTier_Redeemer_85_Bases%;
+                BaseType == %ValuableTier_Redeemer_85_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Redeemer_85_Bases%;
+                BaseType == %ExceptionalTier_Redeemer_85_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 86;
+            {
+                HasValue %ValuableTier_Redeemer_86_Bases%;
+                BaseType == %ValuableTier_Redeemer_86_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Redeemer_86_Bases%;
+                BaseType == %ExceptionalTier_Redeemer_86_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+    ]
+    [
+        HasInfluence Hunter;
+        {
+            HasValue %ValuableTier_Hunter_Any_Bases%;
+            BaseType == %ValuableTier_Hunter_Any_Bases%;
+            Style valuable-tier;
+        }
+        {
+            HasValue %ExceptionalTier_Hunter_Any_Bases%;
+            BaseType == %ExceptionalTier_Hunter_Any_Bases%;
+            Style exceptional-tier;
+        }
+        [
+            ItemLevel >= 83;
+            {
+                HasValue %ValuableTier_Hunter_83_Bases%;
+                BaseType == %ValuableTier_Hunter_83_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Hunter_83_Bases%;
+                BaseType == %ExceptionalTier_Hunter_83_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 84;
+            {
+                HasValue %ValuableTier_Hunter_84_Bases%;
+                BaseType == %ValuableTier_Hunter_84_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Hunter_84_Bases%;
+                BaseType == %ExceptionalTier_Hunter_84_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 85;
+            {
+                HasValue %ValuableTier_Hunter_85_Bases%;
+                BaseType == %ValuableTier_Hunter_85_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Hunter_85_Bases%;
+                BaseType == %ExceptionalTier_Hunter_85_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 86;
+            {
+                HasValue %ValuableTier_Hunter_86_Bases%;
+                BaseType == %ValuableTier_Hunter_86_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Hunter_86_Bases%;
+                BaseType == %ExceptionalTier_Hunter_86_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+    ]
+    [
+        HasInfluence Warlord;
+        {
+            HasValue %ValuableTier_Warlord_Any_Bases%;
+            BaseType == %ValuableTier_Warlord_Any_Bases%;
+            Style valuable-tier;
+        }
+        {
+            HasValue %ExceptionalTier_Warlord_Any_Bases%;
+            BaseType == %ExceptionalTier_Warlord_Any_Bases%;
+            Style exceptional-tier;
+        }
+        [
+            ItemLevel >= 83;
+            {
+                HasValue %ValuableTier_Warlord_83_Bases%;
+                BaseType == %ValuableTier_Warlord_83_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Warlord_83_Bases%;
+                BaseType == %ExceptionalTier_Warlord_83_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 84;
+            {
+                HasValue %ValuableTier_Warlord_84_Bases%;
+                BaseType == %ValuableTier_Warlord_84_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Warlord_84_Bases%;
+                BaseType == %ExceptionalTier_Warlord_84_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 85;
+            {
+                HasValue %ValuableTier_Warlord_85_Bases%;
+                BaseType == %ValuableTier_Warlord_85_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Warlord_85_Bases%;
+                BaseType == %ExceptionalTier_Warlord_85_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+        [
+            ItemLevel >= 86;
+            {
+                HasValue %ValuableTier_Warlord_86_Bases%;
+                BaseType == %ValuableTier_Warlord_86_Bases%;
+                Style valuable-tier;
+            }
+            {
+                HasValue %ExceptionalTier_Warlord_86_Bases%;
+                BaseType == %ExceptionalTier_Warlord_86_Bases%;
+                Style exceptional-tier;
+            }
+        ]
+    ]
+]

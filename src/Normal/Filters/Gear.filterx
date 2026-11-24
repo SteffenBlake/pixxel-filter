@@ -1,19 +1,22 @@
 {
-    Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Jewels" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Warstaves" "Tinctures" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords";
+    Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Jewels" "Quivers" "Rings" "Rune Daggers" "Sceptres" "Shields" "Staves" "Wands" "Warstaves" "Tinctures" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords";
     Rarity < Unique;
-    Style gear junk-tier;
+    Style gear trash-tier;
     {
         Rarity == Rare;
-        Style common-tier;
-        { ItemLevel >= 84; Style useful-tier; }
-    }
-    {
-        Sockets == 6;
-        Style useful-tier;
-    }
-    {
-        LinkedSockets >= 5;
-        Style valuable-tier;
-        { LinkedSockets == 6; Style exceptional-tier; }
+        Style junk-tier;
+        {
+            Identified False;
+            UnidentifiedItemTier >= 3;
+            Style meh-tier;
+            {
+                UnidentifiedItemTier >= 4;
+                Style common-tier;
+                {
+                    UnidentifiedItemTier >= 5;
+                    Style useful-tier;
+                }
+            }
+        }
     }
 }

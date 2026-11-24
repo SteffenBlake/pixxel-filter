@@ -1,5 +1,22 @@
+trash-tier {
+    show: true;
+    font-size: 20;
+    font-color-alpha: 255;
+    border-color-alpha: 255;
+    bg-color-alpha: 255;
+}
+
 junk-tier {
     show: true;
+    font-size: 23;
+    font-color-alpha: 255;
+    border-color-alpha: 255;
+    bg-color-alpha: 255;
+}
+
+meh-tier {
+    show: true;
+    font-size: 26;
     font-color-alpha: 255;
     border-color-alpha: 255;
     bg-color-alpha: 255;
@@ -7,7 +24,34 @@ junk-tier {
 
 common-tier {
     show: true;
+    font-size: 29;
     font-color-alpha: 255;
     border-color-alpha: 255;
     bg-color-alpha: 255;
+}
+
+/* Keep inherited lower-tier font overrides from changing higher tiers. */
+useful-tier {
+    font-size: 33;
+}
+valuable-tier {
+    font-size: 36;
+}
+premium-tier {
+    font-size: 39;
+}
+exceptional-tier {
+    font-size: 42;
+}
+divine-tier {
+    font-size: 45;
+}
+mirror-tier {
+    font-size: 45;
+}
+special-tier {
+    font-size: 36;
+}
+scroll-tier {
+    font-size: 1;
 }

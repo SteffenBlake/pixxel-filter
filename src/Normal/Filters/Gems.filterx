@@ -9,7 +9,10 @@
     {
         GemLevel >= 20;
         Style valuable-tier;
-        { GemLevel >= 21; Style premium-tier; }
+        {
+            GemLevel >= 21;
+            Style premium-tier;
+        }
     }
     {
         BaseType = Awakened;

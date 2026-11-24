@@ -1,41 +1,67 @@
 [
     Style currency;
-    { HasValue %JunkTier_Omen%; BaseType == %JunkTier_Omen%; Style junk-tier; }
+    {
+        HasValue %MehTier_Omen%;
+        BaseType == %MehTier_Omen%;
+        Style meh-tier;
+    }
     {
         HasValue %CommonTier_Omen%; BaseType == %CommonTier_Omen%; Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_Omen%; BaseType == %UsefulTier_Omen%; Style useful-tier;
         {
             StackSize >= 5; Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
         HasValue %ValuableTier_Omen%; BaseType == %ValuableTier_Omen%; Style valuable-tier;
         {
             StackSize >= 3; Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
         HasValue %PremiumTier_Omen%; BaseType == %PremiumTier_Omen%; Style premium-tier;
         {
             StackSize >= 4; Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
         HasValue %ExceptionalTier_Omen%; BaseType == %ExceptionalTier_Omen%; Style exceptional-tier;
         {
             StackSize >= 2; Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_Omen%; BaseType == %DivineTier_Omen%; Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
-    { HasValue %MirrorTier_Omen%; BaseType == %MirrorTier_Omen%; Style mirror-tier; }
+    {
+        HasValue %MirrorTier_Omen%;
+        BaseType == %MirrorTier_Omen%;
+        Style mirror-tier;
+    }
 ]

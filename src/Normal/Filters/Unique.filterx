@@ -5,17 +5,44 @@
 [
     Rarity == Unique;
     Style unique;
-    { HasValue %JunkTier_Unique%; BaseType == %JunkTier_Unique%; Style junk-tier; }
-    { HasValue %CommonTier_Unique%; BaseType == %CommonTier_Unique%; Style common-tier; }
-    { HasValue %UsefulTier_Unique%; BaseType == %UsefulTier_Unique%; Style useful-tier; }
-    { HasValue %ValuableTier_Unique%; BaseType == %ValuableTier_Unique%; Style valuable-tier; }
-    { HasValue %PremiumTier_Unique%; BaseType == %PremiumTier_Unique%; Style premium-tier; }
-    { HasValue %ExceptionalTier_Unique%; BaseType == %ExceptionalTier_Unique%; Style exceptional-tier; }
-    { HasValue %DivineTier_Unique%; BaseType == %DivineTier_Unique%; Style divine-tier; }
-    { HasValue %MirrorTier_Unique%; BaseType == %MirrorTier_Unique%; Style mirror-tier; }
     {
-        HasValue %VariedTier_Unique%;
-        BaseType == %VariedTier_Unique%;
+        HasValue %MehTier_Unique%;
+        BaseType == %MehTier_Unique%;
+        Style meh-tier;
+    }
+    {
+        HasValue %CommonTier_Unique%;
+        BaseType == %CommonTier_Unique%;
+        Style common-tier;
+    }
+    {
+        HasValue %UsefulTier_Unique%;
+        BaseType == %UsefulTier_Unique%;
+        Style useful-tier;
+    }
+    {
+        HasValue %ValuableTier_Unique%;
+        BaseType == %ValuableTier_Unique%;
+        Style valuable-tier;
+    }
+    {
+        HasValue %PremiumTier_Unique%;
+        BaseType == %PremiumTier_Unique%;
         Style premium-tier;
+    }
+    {
+        HasValue %ExceptionalTier_Unique%;
+        BaseType == %ExceptionalTier_Unique%;
+        Style exceptional-tier;
+    }
+    {
+        HasValue %DivineTier_Unique%;
+        BaseType == %DivineTier_Unique%;
+        Style divine-tier;
+    }
+    {
+        HasValue %MirrorTier_Unique%;
+        BaseType == %MirrorTier_Unique%;
+        Style mirror-tier;
     }
 ]

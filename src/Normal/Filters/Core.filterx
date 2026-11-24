@@ -1,6 +1,7 @@
 # PoE1 only. Broad rules first; specific categories and scrolls take priority.
 using Misc.filterx;
 using Gear.filterx;
+using Bases.filterx;
 using Flask.filterx;
 using Map.filterx;
 using Gems.filterx;
@@ -35,5 +36,6 @@ using Viscera.filterx;
 using Corpse.filterx;
 using Gold.filterx;
 using Unique.filterx;
+using Special.filterx;
 using Splinters.filterx;
 using Scrolls.filterx;

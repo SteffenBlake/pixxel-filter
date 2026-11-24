@@ -1,41 +1,67 @@
 [
     Style fragment;
-    { HasValue %JunkTier_DjinnCoin%; BaseType == %JunkTier_DjinnCoin%; Style junk-tier; }
+    {
+        HasValue %MehTier_DjinnCoin%;
+        BaseType == %MehTier_DjinnCoin%;
+        Style meh-tier;
+    }
     {
         HasValue %CommonTier_DjinnCoin%; BaseType == %CommonTier_DjinnCoin%; Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_DjinnCoin%; BaseType == %UsefulTier_DjinnCoin%; Style useful-tier;
         {
             StackSize >= 5; Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
         HasValue %ValuableTier_DjinnCoin%; BaseType == %ValuableTier_DjinnCoin%; Style valuable-tier;
         {
             StackSize >= 3; Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
         HasValue %PremiumTier_DjinnCoin%; BaseType == %PremiumTier_DjinnCoin%; Style premium-tier;
         {
             StackSize >= 4; Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
         HasValue %ExceptionalTier_DjinnCoin%; BaseType == %ExceptionalTier_DjinnCoin%; Style exceptional-tier;
         {
             StackSize >= 2; Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_DjinnCoin%; BaseType == %DivineTier_DjinnCoin%; Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
-    { HasValue %MirrorTier_DjinnCoin%; BaseType == %MirrorTier_DjinnCoin%; Style mirror-tier; }
+    {
+        HasValue %MirrorTier_DjinnCoin%;
+        BaseType == %MirrorTier_DjinnCoin%;
+        Style mirror-tier;
+    }
 ]

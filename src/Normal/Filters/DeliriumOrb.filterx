@@ -1,41 +1,67 @@
 [
     Style currency;
-    { HasValue %JunkTier_DeliriumOrb%; BaseType == %JunkTier_DeliriumOrb%; Style junk-tier; }
+    {
+        HasValue %MehTier_DeliriumOrb%;
+        BaseType == %MehTier_DeliriumOrb%;
+        Style meh-tier;
+    }
     {
         HasValue %CommonTier_DeliriumOrb%; BaseType == %CommonTier_DeliriumOrb%; Style common-tier;
-        { StackSize >= 10; Style useful-tier; }
+        {
+            StackSize >= 10;
+            Style useful-tier;
+        }
     }
     {
         HasValue %UsefulTier_DeliriumOrb%; BaseType == %UsefulTier_DeliriumOrb%; Style useful-tier;
         {
             StackSize >= 5; Style valuable-tier;
-            { StackSize >= 15; Style premium-tier; }
+            {
+                StackSize >= 15;
+                Style premium-tier;
+            }
         }
     }
     {
         HasValue %ValuableTier_DeliriumOrb%; BaseType == %ValuableTier_DeliriumOrb%; Style valuable-tier;
         {
             StackSize >= 3; Style premium-tier;
-            { StackSize >= 10; Style exceptional-tier; }
+            {
+                StackSize >= 10;
+                Style exceptional-tier;
+            }
         }
     }
     {
         HasValue %PremiumTier_DeliriumOrb%; BaseType == %PremiumTier_DeliriumOrb%; Style premium-tier;
         {
             StackSize >= 4; Style exceptional-tier;
-            { StackSize >= 7; Style divine-tier; }
+            {
+                StackSize >= 7;
+                Style divine-tier;
+            }
         }
     }
     {
         HasValue %ExceptionalTier_DeliriumOrb%; BaseType == %ExceptionalTier_DeliriumOrb%; Style exceptional-tier;
         {
             StackSize >= 2; Style divine-tier;
-            { StackSize >= 20; Style mirror-tier; }
+            {
+                StackSize >= 20;
+                Style mirror-tier;
+            }
         }
     }
     {
         HasValue %DivineTier_DeliriumOrb%; BaseType == %DivineTier_DeliriumOrb%; Style divine-tier;
-        { StackSize >= 10; Style mirror-tier; }
+        {
+            StackSize >= 10;
+            Style mirror-tier;
+        }
     }
-    { HasValue %MirrorTier_DeliriumOrb%; BaseType == %MirrorTier_DeliriumOrb%; Style mirror-tier; }
+    {
+        HasValue %MirrorTier_DeliriumOrb%;
+        BaseType == %MirrorTier_DeliriumOrb%;
+        Style mirror-tier;
+    }
 ]
