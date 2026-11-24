@@ -6,7 +6,6 @@ hidden {
     show: false;
     icon: disabled;
     pillar: disabled;
-    alert: disabled;
     drop-sound: disabled;
 }
 
@@ -25,7 +24,6 @@ trash-tier {
     pillar: enabled;
     pillar-color: Brown;
     pillar-duration: Temporary;
-    alert: disabled;
 }
 
 junk-tier {
@@ -43,7 +41,6 @@ junk-tier {
     pillar: enabled;
     pillar-color: Brown;
     pillar-duration: Temporary;
-    alert: disabled;
 }
 
 meh-tier {
@@ -201,7 +198,6 @@ scroll-tier {
     icon-size: 2;
     icon-shape: UpsideDownHouse;
     pillar: disabled;
-    alert: disabled;
     drop-sound: disabled;
 }
 

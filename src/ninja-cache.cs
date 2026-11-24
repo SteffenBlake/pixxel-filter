@@ -299,14 +299,12 @@ sealed class Compiler
                 if (Number(line, "listingCount") < 50 || variant.Contains('/')) continue;
                 if (variant.Length == 0) variant = "Normal";
                 if (variant is not ("Normal" or "Shaper" or "Elder" or "Crusader" or "Redeemer" or "Hunter" or "Warlord")) continue;
-                // Minimum price across each minimum-item-level range avoids promoting
-                // higher-level drops using an expensive, scarce lower-level listing.
-                foreach (int level in new[] { 0, 83, 84, 85, 86 })
-                {
-                    if (Number(line, "levelRequired") < level) continue;
-                    var key = (name, variant, level);
-                    bases[key] = bases.TryGetValue(key, out decimal previous) ? Math.Min(previous, price) : price;
-                }
+                // Each observation belongs only to its own bucket. Never use a
+                // higher-level price as evidence for lower-level drops.
+                int itemLevel = (int)Number(line, "levelRequired");
+                int level = itemLevel >= 86 ? 86 : itemLevel >= 83 ? itemLevel : 0;
+                var key = (name, variant, level);
+                bases[key] = bases.TryGetValue(key, out decimal previous) ? Math.Min(previous, price) : price;
             }
             else if (category == "ClusterJewel")
             {
@@ -476,8 +474,10 @@ sealed class Compiler
         Check(output["ExceptionalTier_Unique"]?[0]?.GetValue<string>() == "Boundary Base", "unique midpoint at inclusive threshold");
         Check(!output.ContainsKey("VariedTier_Unique"), "no varied unique tier");
         Check(!compiler.uniques.ContainsKey("Linked Only Base"), "special-only bases are excluded");
-        Check(output["ValuableTier_Normal_Any_Bases"]?[0]?.GetValue<string>() == "Test Base", "unrestricted base bucket");
-        Check(output["ValuableTier_Normal_84_Bases"]?[0]?.GetValue<string>() == "Test Base", "base range uses minimum price, inclusive five-chaos threshold");
+        Check(!output.ContainsKey("ValuableTier_Normal_Any_Bases"), "higher-level prices never populate unrestricted bucket");
+        Check(!output.ContainsKey("ValuableTier_Normal_83_Bases"), "higher-level prices never populate lower-level bucket");
+        Check(output["ValuableTier_Normal_84_Bases"]?[0]?.GetValue<string>() == "Test Base", "exact item-level bucket");
+        Check(output["ValuableTier_Normal_85_Bases"]?[0]?.GetValue<string>() == "Test Base", "inclusive five-chaos threshold");
         Check(output["ExceptionalTier_Normal_86_Bases"]?[0]?.GetValue<string>() == "Test Base", "86-plus bucket, inclusive fifty-chaos threshold");
         Check(output["WorthlessTier_Normal_Any_Bases"]?[0]?.GetValue<string>() == "Cheap Base", "cheap bases retained without item-level restriction");
         Check(output["ExceptionalTier_Hunter_83_Bases"]?[0]?.GetValue<string>() == "Influenced Base", "influence-specific base bucket");

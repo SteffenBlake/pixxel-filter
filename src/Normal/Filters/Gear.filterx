@@ -20,3 +20,8 @@
         }
     }
 }
+
+{
+    LinkedSockets == 6;
+    Style gear premium-tier;
+}

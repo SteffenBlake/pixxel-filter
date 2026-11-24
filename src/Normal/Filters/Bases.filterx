@@ -9,6 +9,7 @@
     [
         {
             HasValue %ValuableTier_Normal_Any_Bases%;
+            LinkedSockets < 6;
             BaseType == %ValuableTier_Normal_Any_Bases%;
             Style valuable-tier;
         }
@@ -21,6 +22,7 @@
             ItemLevel >= 83;
             {
                 HasValue %ValuableTier_Normal_83_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Normal_83_Bases%;
                 Style valuable-tier;
             }
@@ -34,6 +36,7 @@
             ItemLevel >= 84;
             {
                 HasValue %ValuableTier_Normal_84_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Normal_84_Bases%;
                 Style valuable-tier;
             }
@@ -47,6 +50,7 @@
             ItemLevel >= 85;
             {
                 HasValue %ValuableTier_Normal_85_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Normal_85_Bases%;
                 Style valuable-tier;
             }
@@ -60,6 +64,7 @@
             ItemLevel >= 86;
             {
                 HasValue %ValuableTier_Normal_86_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Normal_86_Bases%;
                 Style valuable-tier;
             }
@@ -74,6 +79,7 @@
         HasInfluence Shaper;
         {
             HasValue %ValuableTier_Shaper_Any_Bases%;
+            LinkedSockets < 6;
             BaseType == %ValuableTier_Shaper_Any_Bases%;
             Style valuable-tier;
         }
@@ -86,6 +92,7 @@
             ItemLevel >= 83;
             {
                 HasValue %ValuableTier_Shaper_83_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Shaper_83_Bases%;
                 Style valuable-tier;
             }
@@ -99,6 +106,7 @@
             ItemLevel >= 84;
             {
                 HasValue %ValuableTier_Shaper_84_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Shaper_84_Bases%;
                 Style valuable-tier;
             }
@@ -112,6 +120,7 @@
             ItemLevel >= 85;
             {
                 HasValue %ValuableTier_Shaper_85_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Shaper_85_Bases%;
                 Style valuable-tier;
             }
@@ -125,6 +134,7 @@
             ItemLevel >= 86;
             {
                 HasValue %ValuableTier_Shaper_86_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Shaper_86_Bases%;
                 Style valuable-tier;
             }
@@ -139,6 +149,7 @@
         HasInfluence Elder;
         {
             HasValue %ValuableTier_Elder_Any_Bases%;
+            LinkedSockets < 6;
             BaseType == %ValuableTier_Elder_Any_Bases%;
             Style valuable-tier;
         }
@@ -151,6 +162,7 @@
             ItemLevel >= 83;
             {
                 HasValue %ValuableTier_Elder_83_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Elder_83_Bases%;
                 Style valuable-tier;
             }
@@ -164,6 +176,7 @@
             ItemLevel >= 84;
             {
                 HasValue %ValuableTier_Elder_84_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Elder_84_Bases%;
                 Style valuable-tier;
             }
@@ -177,6 +190,7 @@
             ItemLevel >= 85;
             {
                 HasValue %ValuableTier_Elder_85_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Elder_85_Bases%;
                 Style valuable-tier;
             }
@@ -190,6 +204,7 @@
             ItemLevel >= 86;
             {
                 HasValue %ValuableTier_Elder_86_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Elder_86_Bases%;
                 Style valuable-tier;
             }
@@ -204,6 +219,7 @@
         HasInfluence Crusader;
         {
             HasValue %ValuableTier_Crusader_Any_Bases%;
+            LinkedSockets < 6;
             BaseType == %ValuableTier_Crusader_Any_Bases%;
             Style valuable-tier;
         }
@@ -216,6 +232,7 @@
             ItemLevel >= 83;
             {
                 HasValue %ValuableTier_Crusader_83_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Crusader_83_Bases%;
                 Style valuable-tier;
             }
@@ -229,6 +246,7 @@
             ItemLevel >= 84;
             {
                 HasValue %ValuableTier_Crusader_84_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Crusader_84_Bases%;
                 Style valuable-tier;
             }
@@ -242,6 +260,7 @@
             ItemLevel >= 85;
             {
                 HasValue %ValuableTier_Crusader_85_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Crusader_85_Bases%;
                 Style valuable-tier;
             }
@@ -255,6 +274,7 @@
             ItemLevel >= 86;
             {
                 HasValue %ValuableTier_Crusader_86_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Crusader_86_Bases%;
                 Style valuable-tier;
             }
@@ -269,6 +289,7 @@
         HasInfluence Redeemer;
         {
             HasValue %ValuableTier_Redeemer_Any_Bases%;
+            LinkedSockets < 6;
             BaseType == %ValuableTier_Redeemer_Any_Bases%;
             Style valuable-tier;
         }
@@ -281,6 +302,7 @@
             ItemLevel >= 83;
             {
                 HasValue %ValuableTier_Redeemer_83_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Redeemer_83_Bases%;
                 Style valuable-tier;
             }
@@ -294,6 +316,7 @@
             ItemLevel >= 84;
             {
                 HasValue %ValuableTier_Redeemer_84_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Redeemer_84_Bases%;
                 Style valuable-tier;
             }
@@ -307,6 +330,7 @@
             ItemLevel >= 85;
             {
                 HasValue %ValuableTier_Redeemer_85_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Redeemer_85_Bases%;
                 Style valuable-tier;
             }
@@ -320,6 +344,7 @@
             ItemLevel >= 86;
             {
                 HasValue %ValuableTier_Redeemer_86_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Redeemer_86_Bases%;
                 Style valuable-tier;
             }
@@ -334,6 +359,7 @@
         HasInfluence Hunter;
         {
             HasValue %ValuableTier_Hunter_Any_Bases%;
+            LinkedSockets < 6;
             BaseType == %ValuableTier_Hunter_Any_Bases%;
             Style valuable-tier;
         }
@@ -346,6 +372,7 @@
             ItemLevel >= 83;
             {
                 HasValue %ValuableTier_Hunter_83_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Hunter_83_Bases%;
                 Style valuable-tier;
             }
@@ -359,6 +386,7 @@
             ItemLevel >= 84;
             {
                 HasValue %ValuableTier_Hunter_84_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Hunter_84_Bases%;
                 Style valuable-tier;
             }
@@ -372,6 +400,7 @@
             ItemLevel >= 85;
             {
                 HasValue %ValuableTier_Hunter_85_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Hunter_85_Bases%;
                 Style valuable-tier;
             }
@@ -385,6 +414,7 @@
             ItemLevel >= 86;
             {
                 HasValue %ValuableTier_Hunter_86_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Hunter_86_Bases%;
                 Style valuable-tier;
             }
@@ -399,6 +429,7 @@
         HasInfluence Warlord;
         {
             HasValue %ValuableTier_Warlord_Any_Bases%;
+            LinkedSockets < 6;
             BaseType == %ValuableTier_Warlord_Any_Bases%;
             Style valuable-tier;
         }
@@ -411,6 +442,7 @@
             ItemLevel >= 83;
             {
                 HasValue %ValuableTier_Warlord_83_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Warlord_83_Bases%;
                 Style valuable-tier;
             }
@@ -424,6 +456,7 @@
             ItemLevel >= 84;
             {
                 HasValue %ValuableTier_Warlord_84_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Warlord_84_Bases%;
                 Style valuable-tier;
             }
@@ -437,6 +470,7 @@
             ItemLevel >= 85;
             {
                 HasValue %ValuableTier_Warlord_85_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Warlord_85_Bases%;
                 Style valuable-tier;
             }
@@ -450,6 +484,7 @@
             ItemLevel >= 86;
             {
                 HasValue %ValuableTier_Warlord_86_Bases%;
+                LinkedSockets < 6;
                 BaseType == %ValuableTier_Warlord_86_Bases%;
                 Style valuable-tier;
             }

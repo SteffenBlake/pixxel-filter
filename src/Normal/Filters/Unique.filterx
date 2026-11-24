@@ -2,26 +2,35 @@
     Rarity == Unique;
     Style unique valuable-tier;
 }
+{
+    Rarity == Unique;
+    LinkedSockets == 6;
+    Style unique premium-tier;
+}
 [
     Rarity == Unique;
     Style unique;
     {
         HasValue %MehTier_Unique%;
+        LinkedSockets < 6;
         BaseType == %MehTier_Unique%;
         Style meh-tier;
     }
     {
         HasValue %CommonTier_Unique%;
+        LinkedSockets < 6;
         BaseType == %CommonTier_Unique%;
         Style common-tier;
     }
     {
         HasValue %UsefulTier_Unique%;
+        LinkedSockets < 6;
         BaseType == %UsefulTier_Unique%;
         Style useful-tier;
     }
     {
         HasValue %ValuableTier_Unique%;
+        LinkedSockets < 6;
         BaseType == %ValuableTier_Unique%;
         Style valuable-tier;
     }
